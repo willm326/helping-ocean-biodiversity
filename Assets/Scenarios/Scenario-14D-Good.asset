@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-14D-Good
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'Just recently, a manatee was saved from toxicity in the water by a local resident. '
+  - 'However, the manatee will need to be in human supervision before released to
+    make sure the toxic waste completely leaves it''s system and habitat. '
+  - Thank you to this random kind stranger, and hopefully, if any of you ever find
+    an injured or ill creature you'll report it to animal control or inform the wildlife
+    services immediately.
+  speaker: News Reporter
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: bb72bbbaba94f3445aa69acd536af646, type: 3}
+  choices: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}

@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-10B
+  m_EditorClassIdentifier: 
+  sentences:
+  - You head over to see what everyone is looking at and you see some monk seals.
+  - The people are taking pictures of them.
+  speaker: 
+  character: {fileID: 21300000, guid: 3026de705110c6f49b3b41d2e60dee31, type: 3}
+  environment: {fileID: 21300000, guid: 8f53cf63348987f47b33a8dbc64e8f99, type: 3}
+  overlay: {fileID: 21300000, guid: c9a514980229a7d47a983e6a31186fe8, type: 3}
+  choices:
+  - buttonText: Take pictures as well
+    moralValue: -1
+    nextScenario: {fileID: 0}
+    responseSentences:
+    - You take some photos of the seals, until a life guard arrives, trying to clear
+      the people in the area.
+  - buttonText: Tell them to stop taking pictures
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}

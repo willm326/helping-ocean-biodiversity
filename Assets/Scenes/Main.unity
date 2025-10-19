@@ -1381,7 +1381,7 @@ GameObject:
   - component: {fileID: 143558149}
   - component: {fileID: 143558148}
   m_Layer: 0
-  m_Name: Scenario (13R3B) (1)
+  m_Name: Scenario (13R3B) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4072,7 +4072,7 @@ GameObject:
   - component: {fileID: 515791784}
   - component: {fileID: 515791783}
   m_Layer: 0
-  m_Name: Scenario (13R1C) (1)
+  m_Name: Scenario (13R1C) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4685,6 +4685,7 @@ GameObject:
   m_Component:
   - component: {fileID: 584396770}
   - component: {fileID: 584396769}
+  - component: {fileID: 584396771}
   m_Layer: 0
   m_Name: DialogueManager
   m_TagString: Untagged
@@ -4787,6 +4788,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &584396771
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 584396768}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e7955da445fec94fb72321f3c3cea13, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &584693953
 GameObject:
   m_ObjectHideFlags: 0
@@ -5861,7 +5874,7 @@ GameObject:
   - component: {fileID: 711807081}
   - component: {fileID: 711807080}
   m_Layer: 0
-  m_Name: Scenario (13R3A) (1)
+  m_Name: Scenario (13R3A) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5952,7 +5965,7 @@ GameObject:
   - component: {fileID: 714341319}
   - component: {fileID: 714341318}
   m_Layer: 0
-  m_Name: Scenario (13R2A) (1)
+  m_Name: Scenario (13R2A) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6537,7 +6550,7 @@ GameObject:
   - component: {fileID: 758988013}
   - component: {fileID: 758988012}
   m_Layer: 0
-  m_Name: Scenario (13R2C) (1)
+  m_Name: Scenario (13R2C) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6703,7 +6716,7 @@ GameObject:
   - component: {fileID: 789290020}
   - component: {fileID: 789290019}
   m_Layer: 0
-  m_Name: Scenario (13R1B) (1)
+  m_Name: Scenario (13R1B) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8591,7 +8604,7 @@ GameObject:
   - component: {fileID: 982300005}
   - component: {fileID: 982300004}
   m_Layer: 0
-  m_Name: Scenario (7AAAAA/7AAAAB) Good
+  m_Name: Scenario (7AAAAA) Good
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9598,7 +9611,7 @@ GameObject:
   - component: {fileID: 1069834449}
   - component: {fileID: 1069834448}
   m_Layer: 0
-  m_Name: Scenario (13R3C) (1)
+  m_Name: Scenario (13R3C) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10584,7 +10597,7 @@ GameObject:
   - component: {fileID: 1206502387}
   - component: {fileID: 1206502386}
   m_Layer: 0
-  m_Name: Scenario (13R2B) (1)
+  m_Name: Scenario (13R2B) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12000,7 +12013,7 @@ GameObject:
   - component: {fileID: 1416356229}
   - component: {fileID: 1416356228}
   m_Layer: 0
-  m_Name: Scenario (7AAAAA/7AAAAB) Bad
+  m_Name: Scenario (7AAAAA) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13228,7 +13241,7 @@ GameObject:
   - component: {fileID: 1543157074}
   - component: {fileID: 1543157073}
   m_Layer: 0
-  m_Name: Scenario (13R1A) (1)
+  m_Name: Scenario (13R1A) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

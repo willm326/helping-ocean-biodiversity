@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-11AA2
+  m_EditorClassIdentifier: 
+  sentences:
+  - You shouldn't feed the birds bread, it's bad for their health.
+  speaker: Wcdonalds Employee
+  character: {fileID: 21300000, guid: c9a514980229a7d47a983e6a31186fe8, type: 3}
+  environment: {fileID: 21300000, guid: 1124ad3b932dc114d9f1979f483fc8f5, type: 3}
+  overlay: {fileID: 21300000, guid: cfb98e594613abd4bb0ce5dbec5f01f7, type: 3}
+  choices:
+  - buttonText: Apologize for feeding the bird
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences:
+    - You apologize to the employee and the employee nods in response.
+  - buttonText: Ignore the employee's advice
+    moralValue: -1
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}

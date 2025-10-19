@@ -1,0 +1,53 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-5R3
+  m_EditorClassIdentifier: 
+  sentences:
+  - What would you like to do next?
+  speaker: 
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: be6ce82adf09dd5449475ca31299dcb0, type: 3}
+  choices:
+  - buttonText: Put on makeup
+    moralValue: -1
+    nextScenario: {fileID: 0}
+    responseSentences:
+    - 'You apply some makeup to your face. '
+  - buttonText: Put on your beach gear
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences:
+    - You pick out your favorite swim suit and put it on.
+  - buttonText: Pack snacks
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences:
+    - 'You pack your favorite snacks: Pretzels, candy bars, apples, and potato chips.'
+  - buttonText: Put on sunscreen
+    moralValue: -1
+    nextScenario: {fileID: 0}
+    responseSentences:
+    - You apply sunscreen to protect yourself from the sun.
+  - buttonText: Bring a first aid kit
+    moralValue: 1
+    nextScenario: {fileID: 0}
+    responseSentences:
+    - You pack a first aid kit. You never know when it might come in handy.
+  - buttonText: Leave for the beach
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}

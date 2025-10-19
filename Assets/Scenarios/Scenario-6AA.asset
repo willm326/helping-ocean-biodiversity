@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-6AA
+  m_EditorClassIdentifier: 
+  sentences: []
+  speaker: 
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: 9a00051d993350847bc24ca7d6797c66, type: 3}
+  choices:
+  - buttonText: Pull over and check what it is
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  - buttonText: Continue driving
+    moralValue: -1
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  savedAnimals: 0
+  hurtAnimals: 2
+  defaultScenario: {fileID: 0}

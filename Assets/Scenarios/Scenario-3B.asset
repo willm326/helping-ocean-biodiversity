@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-3B
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'As you call for help, the vaquita stills itself. '
+  - 'Eventually help arrives, and the adults take control, calming the vaquita as
+    they approach it. '
+  - Luckily enough. the vaquita doesn't get injured too much by the rope as it becomes
+    free.
+  - With the creature free, you begin heading home.
+  speaker: 
+  character: {fileID: 21300000, guid: 25599ec984544af44956e5f83d26d957, type: 3}
+  environment: {fileID: 21300000, guid: 8f53cf63348987f47b33a8dbc64e8f99, type: 3}
+  overlay: {fileID: 21300000, guid: c9a514980229a7d47a983e6a31186fe8, type: 3}
+  choices: []
+  savedAnimals: 1
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}

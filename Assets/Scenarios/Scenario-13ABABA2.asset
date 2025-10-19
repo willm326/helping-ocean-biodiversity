@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-13ABABA2
+  m_EditorClassIdentifier: 
+  sentences:
+  - I'm looking for some run offs, it seems like the manatee was affected by some
+    sort of chemical in the water.
+  speaker: Animal Control
+  character: {fileID: 21300000, guid: 160d1b418f9529b4c864dbf60e774e67, type: 3}
+  environment: {fileID: 21300000, guid: ac510f8a4b54a354b8fb84c4bdab22ed, type: 3}
+  overlay: {fileID: 21300000, guid: c9a514980229a7d47a983e6a31186fe8, type: 3}
+  choices:
+  - buttonText: Ask what kind of chemical it was
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  - buttonText: Stay quiet and continue walking
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}

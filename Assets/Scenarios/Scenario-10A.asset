@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-10A
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'You head to the secluded area of the beach. '
+  - The sound of the waves are relaxing as you walk around.
+  - As you walk, you discover a nest of sea turtle eggs.
+  speaker: 
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: 40b7c97fb86b9844cb5e7313472d9616, type: 3}
+  choices:
+  - buttonText: Leave them alone
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  - buttonText: Try to touch them
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  - buttonText: Try to take one home
+    moralValue: -1
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}

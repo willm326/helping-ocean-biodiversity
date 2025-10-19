@@ -6,6 +6,19 @@ using UnityEngine;
 [CreateAssetMenu]
 public class Scenario : ScriptableObject
 {
+    [Flags]
+    public enum Animals
+    {
+        None = 0,
+        Vaquita = 1,
+        Turtle = 2,
+        MonkSeal = 4,
+        Manatee = 8,
+        Bird = 16,
+        Shark = 32,
+        Fish = 64
+    }
+
     [SerializeField]
     [TextArea(3, 10)]
     [Tooltip("Sentences to read")]
@@ -59,6 +72,24 @@ public class Scenario : ScriptableObject
     }
 
     [SerializeField]
+    [Tooltip("The animals that were saved in this scenario")]
+    Animals savedAnimals;
+    public Animals SavedAnimals
+    {
+        get => savedAnimals;
+        set => savedAnimals = value;
+    }
+
+    [SerializeField]
+    [Tooltip("The animals that were hurt by this interaction")]
+    Animals hurtAnimals;
+    public Animals HurtAnimals
+    {
+        get => hurtAnimals;
+        set => hurtAnimals = value;
+    }
+
+    [SerializeField]
     [Tooltip("The next scenario to read if there are no choices or the choices don't provide a new scenario")]
     Scenario defaultScenario;
     public Scenario DefaultScenario
@@ -71,17 +102,12 @@ public class Scenario : ScriptableObject
 [System.Serializable]
 public class Choice
 {
-    [Flags]
-    public enum SavedAnimals
+    [SerializeField]
+    string buttonText;
+    public string ButtonText
     {
-        None = 0,
-        Vaquita = 1,
-        Turtle = 2,
-        MonkSeal = 4,
-        Manatee = 8,
-        Bird = 16,
-        Shark = 32,
-        Fish = 64
+        get => buttonText;
+        set => buttonText = value;
     }
 
     [SerializeField]
@@ -110,15 +136,6 @@ public class Choice
     {
         get => responseSentences;
         set => responseSentences = value;
-    }
-
-    [SerializeField]
-    [Tooltip("The animals that were saved by this interaction")]
-    SavedAnimals savedAnimals;
-    public SavedAnimals Saved
-    {
-        get => savedAnimals;
-        set => savedAnimals = value;
     }
 
     public bool Selected { get; set; } = false;

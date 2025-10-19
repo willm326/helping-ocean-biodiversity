@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-9BAA
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'You shout a warning, the surrounding people hearing rushed to the reef. '
+  - You quickly head back to the reef.
+  - Looking back, you don't see the shark anymore.
+  speaker: 
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: 7a19a69a639d88644ac685b596900da7, type: 3}
+  choices:
+  - buttonText: Try to look for the shark
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  - buttonText: Go explore the reef for the remainder of the time
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences:
+    - You decide to find the guide and report the shark attack.
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}

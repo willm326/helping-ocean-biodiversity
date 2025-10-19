@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: Scenario-6AAAAAB
+  m_EditorClassIdentifier: 
+  sentences:
+  - You apply rubbing alcohol to the sea turtle's wound. The sea turtle flinches,
+    trying to move away.
+  speaker: 
+  character: {fileID: 21300000, guid: 4fc0e87310c81004299b558e6867313c, type: 3}
+  environment: {fileID: 21300000, guid: 764e3a6dcda2bc5418500deb5805ede1, type: 3}
+  overlay: {fileID: 21300000, guid: c9a514980229a7d47a983e6a31186fe8, type: 3}
+  choices:
+  - buttonText: Leave the turtle there
+    moralValue: -1
+    nextScenario: {fileID: 0}
+    responseSentences:
+    - You decide to leave the Turtle on the road.
+    - Hopefully it will be okay.
+  - buttonText: Wrap Gauze around the injury
+    moralValue: 0
+    nextScenario: {fileID: 0}
+    responseSentences: []
+  savedAnimals: 2
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}
