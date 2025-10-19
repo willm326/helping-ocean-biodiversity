@@ -7,10 +7,15 @@ using UnityEngine.SceneManagement;
 public class ButtonFunctions : MonoBehaviour
 {
     public void SelectOption(int choice)
-  {
-    
-  }
-
+    {
+        WorldVariables.choice = choice;
+        WorldVariables.choosing = false;
+        GameObject[] Buttons = GameObject.FindGameObjectsWithTag("Button");
+        foreach (GameObject Button in Buttons)
+        {
+            Destroy(Button.gameObject);
+        }
+    }
 
     public void OptionA()
     {
