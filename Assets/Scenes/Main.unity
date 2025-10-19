@@ -43,7 +43,7 @@ RenderSettings:
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 11
+  serializedVersion: 12
   m_GIWorkflowMode: 1
   m_GISettings:
     serializedVersion: 2
@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 1
+  m_LightingSettings: {fileID: 830294285}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -118,6 +118,8 @@ NavMeshSettings:
     manualTileSize: 0
     tileSize: 256
     accuratePlacement: 0
+    maxJobWorkers: 0
+    preserveTilesOutsideBounds: 0
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
@@ -133,7 +135,7 @@ GameObject:
   - component: {fileID: 3423428}
   m_Layer: 0
   m_Name: Scenario (10BAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -225,7 +227,7 @@ GameObject:
   - component: {fileID: 21418110}
   m_Layer: 0
   m_Name: Scenario (13ABABAA1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -312,7 +314,7 @@ GameObject:
   - component: {fileID: 49454296}
   m_Layer: 0
   m_Name: Scenario (11) Recycle
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -401,7 +403,7 @@ GameObject:
   - component: {fileID: 52643321}
   m_Layer: 0
   m_Name: Scenario (14C2) Neutral
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -487,7 +489,7 @@ GameObject:
   - component: {fileID: 61942547}
   m_Layer: 0
   m_Name: Scenario (13ABAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -580,7 +582,7 @@ GameObject:
   - component: {fileID: 67997006}
   m_Layer: 0
   m_Name: Scenario (8)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -670,7 +672,7 @@ GameObject:
   - component: {fileID: 78115387}
   m_Layer: 0
   m_Name: Scenario (14D) Neutral
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -763,7 +765,7 @@ GameObject:
   - component: {fileID: 91125355}
   m_Layer: 0
   m_Name: Scenario (6AAAAB1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -907,6 +909,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -937,6 +940,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 92809479}
+        m_TargetAssemblyTypeName: 
         m_MethodName: OptionA
         m_Mode: 1
         m_Arguments:
@@ -962,6 +966,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -996,7 +1001,7 @@ GameObject:
   - component: {fileID: 103890645}
   m_Layer: 0
   m_Name: Scenario (13ABAAA2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1088,7 +1093,7 @@ GameObject:
   - component: {fileID: 120423830}
   m_Layer: 0
   m_Name: Scenario (13ABABAB2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1342,6 +1347,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -1376,7 +1382,7 @@ GameObject:
   - component: {fileID: 143558148}
   m_Layer: 0
   m_Name: Scenario (13R3B) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1467,7 +1473,7 @@ GameObject:
   - component: {fileID: 198264315}
   m_Layer: 0
   m_Name: Scenario (5R2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1559,7 +1565,7 @@ GameObject:
   - component: {fileID: 225185736}
   m_Layer: 0
   m_Name: Scenario (9A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1653,7 +1659,7 @@ GameObject:
   - component: {fileID: 244936275}
   m_Layer: 0
   m_Name: Scenario (7AA/7ABA/7ABBA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1746,7 +1752,7 @@ GameObject:
   - component: {fileID: 247625731}
   m_Layer: 0
   m_Name: Scenario (13ABA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1839,7 +1845,7 @@ GameObject:
   - component: {fileID: 257212378}
   m_Layer: 0
   m_Name: Scenario (4AB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1928,7 +1934,7 @@ GameObject:
   - component: {fileID: 275193891}
   m_Layer: 0
   m_Name: Scenario (7A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2019,7 +2025,7 @@ GameObject:
   - component: {fileID: 284878987}
   m_Layer: 0
   m_Name: Scenario (14C) Bad
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2105,7 +2111,7 @@ GameObject:
   - component: {fileID: 288527308}
   m_Layer: 0
   m_Name: Scenario (9B)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2193,7 +2199,7 @@ GameObject:
   - component: {fileID: 302408252}
   m_Layer: 0
   m_Name: Scenario (13ABAAA1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2281,7 +2287,7 @@ GameObject:
   - component: {fileID: 303159721}
   m_Layer: 0
   m_Name: Scenario (11A/11B/11C)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2367,7 +2373,7 @@ GameObject:
   - component: {fileID: 314684651}
   m_Layer: 0
   m_Name: Scenario (4AA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2456,7 +2462,7 @@ GameObject:
   - component: {fileID: 322002791}
   m_Layer: 0
   m_Name: Scenario (14B) Beach
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2547,7 +2553,7 @@ GameObject:
   - component: {fileID: 334685900}
   m_Layer: 0
   m_Name: Scenario (9BA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2636,7 +2642,7 @@ GameObject:
   - component: {fileID: 336731001}
   m_Layer: 0
   m_Name: Scenario (14)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2767,6 +2773,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 0.13333334}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2841,6 +2848,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -2875,7 +2883,7 @@ GameObject:
   - component: {fileID: 361907878}
   m_Layer: 0
   m_Name: Scenario (7ABB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2970,7 +2978,7 @@ GameObject:
   - component: {fileID: 369755513}
   m_Layer: 0
   m_Name: Scenario (13R3A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3061,7 +3069,7 @@ GameObject:
   - component: {fileID: 382803248}
   m_Layer: 0
   m_Name: Scenario (13R1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3187,6 +3195,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3221,7 +3230,7 @@ GameObject:
   - component: {fileID: 388547512}
   m_Layer: 0
   m_Name: Scenario (13R3)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3347,6 +3356,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -3381,7 +3391,7 @@ GameObject:
   - component: {fileID: 422605097}
   m_Layer: 0
   m_Name: Scenario (11AA1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3535,7 +3545,7 @@ GameObject:
   - component: {fileID: 460435652}
   m_Layer: 0
   m_Name: Scenario (13R1B)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3626,7 +3636,7 @@ GameObject:
   - component: {fileID: 471601141}
   m_Layer: 0
   m_Name: Scenario (10B)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3716,7 +3726,7 @@ GameObject:
   - component: {fileID: 478989219}
   m_Layer: 0
   m_Name: Scenario (13R3C)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3807,7 +3817,7 @@ GameObject:
   - component: {fileID: 480330815}
   m_Layer: 0
   m_Name: Scenario (13B)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3896,7 +3906,7 @@ GameObject:
   - component: {fileID: 500755461}
   m_Layer: 0
   m_Name: Scenario (14A2) Neutral
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4024,6 +4034,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -4062,7 +4073,7 @@ GameObject:
   - component: {fileID: 515791783}
   m_Layer: 0
   m_Name: Scenario (13R1C) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4153,7 +4164,7 @@ GameObject:
   - component: {fileID: 519171851}
   m_Layer: 0
   m_Name: Scenario (10BA1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4323,7 +4334,7 @@ GameObject:
   - component: {fileID: 525871870}
   m_Layer: 0
   m_Name: Scenario (6AAAAAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4413,7 +4424,7 @@ GameObject:
   - component: {fileID: 528486522}
   m_Layer: 0
   m_Name: Scenario (13R2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4499,7 +4510,7 @@ GameObject:
   - component: {fileID: 538074599}
   m_Layer: 0
   m_Name: Scenario (3A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4588,7 +4599,7 @@ GameObject:
   - component: {fileID: 541772297}
   m_Layer: 0
   m_Name: Scenario (10ABA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4788,7 +4799,7 @@ GameObject:
   - component: {fileID: 584693954}
   m_Layer: 0
   m_Name: Scenario (9BAB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4877,7 +4888,7 @@ GameObject:
   - component: {fileID: 599388141}
   m_Layer: 0
   m_Name: Scenario (13R3B)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -4968,7 +4979,7 @@ GameObject:
   - component: {fileID: 609082884}
   m_Layer: 0
   m_Name: Scenario (6AAAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5055,7 +5066,7 @@ GameObject:
   - component: {fileID: 613886412}
   m_Layer: 0
   m_Name: Scenario (14C) Neutral
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5141,7 +5152,7 @@ GameObject:
   - component: {fileID: 633463756}
   m_Layer: 0
   m_Name: Scenario (7)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5230,7 +5241,7 @@ GameObject:
   - component: {fileID: 643483223}
   m_Layer: 0
   m_Name: Scenario (13ABAB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5317,7 +5328,7 @@ GameObject:
   - component: {fileID: 646607038}
   m_Layer: 0
   m_Name: Scenario (9AB/9AAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5404,7 +5415,7 @@ GameObject:
   - component: {fileID: 647036901}
   m_Layer: 0
   m_Name: Scenario (3AA/3ADA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5494,7 +5505,7 @@ GameObject:
   - component: {fileID: 660537224}
   m_Layer: 0
   m_Name: Scenario (13R1C)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5585,7 +5596,7 @@ GameObject:
   - component: {fileID: 669165993}
   m_Layer: 0
   m_Name: Scenario (12A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5674,7 +5685,7 @@ GameObject:
   - component: {fileID: 672436296}
   m_Layer: 0
   m_Name: Scenario (14A2) Bad
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5763,7 +5774,7 @@ GameObject:
   - component: {fileID: 673532538}
   m_Layer: 0
   m_Name: Scenario (6)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5851,7 +5862,7 @@ GameObject:
   - component: {fileID: 711807080}
   m_Layer: 0
   m_Name: Scenario (13R3A) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -5942,7 +5953,7 @@ GameObject:
   - component: {fileID: 714341318}
   m_Layer: 0
   m_Name: Scenario (13R2A) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6033,7 +6044,7 @@ GameObject:
   - component: {fileID: 719449170}
   m_Layer: 0
   m_Name: Scenario (10A/10BBCB/10BAAAB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6162,6 +6173,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6200,7 +6212,7 @@ GameObject:
   - component: {fileID: 734577478}
   m_Layer: 0
   m_Name: Scenario (4)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6291,7 +6303,7 @@ GameObject:
   - component: {fileID: 745638743}
   m_Layer: 0
   m_Name: Scenario (13ABABAB3)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6422,6 +6434,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -6452,6 +6465,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 758917598}
+        m_TargetAssemblyTypeName: 
         m_MethodName: Continue
         m_Mode: 1
         m_Arguments:
@@ -6477,6 +6491,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6523,7 +6538,7 @@ GameObject:
   - component: {fileID: 758988012}
   m_Layer: 0
   m_Name: Scenario (13R2C) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6654,6 +6669,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -6688,7 +6704,7 @@ GameObject:
   - component: {fileID: 789290019}
   m_Layer: 0
   m_Name: Scenario (13R1B) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6779,7 +6795,7 @@ GameObject:
   - component: {fileID: 806848452}
   m_Layer: 0
   m_Name: Scenario (11AAA1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -6912,6 +6928,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
 --- !u!223 &809028836
 Canvas:
   m_ObjectHideFlags: 0
@@ -6981,7 +6998,7 @@ GameObject:
   - component: {fileID: 818091248}
   m_Layer: 0
   m_Name: Scenario (3AD)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7061,6 +7078,67 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!850595691 &830294285
+LightingSettings:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Settings.lighting
+  serializedVersion: 3
+  m_GIWorkflowMode: 1
+  m_EnableBakedLightmaps: 0
+  m_EnableRealtimeLightmaps: 0
+  m_RealtimeEnvironmentLighting: 1
+  m_BounceScale: 1
+  m_AlbedoBoost: 1
+  m_IndirectOutputScale: 1
+  m_UsingShadowmask: 1
+  m_BakeBackend: 0
+  m_LightmapMaxSize: 1024
+  m_BakeResolution: 40
+  m_Padding: 2
+  m_TextureCompression: 1
+  m_AO: 0
+  m_AOMaxDistance: 1
+  m_CompAOExponent: 1
+  m_CompAOExponentDirect: 0
+  m_ExtractAO: 0
+  m_MixedBakeMode: 2
+  m_LightmapsBakeMode: 1
+  m_FilterMode: 1
+  m_LightmapParameters: {fileID: 15204, guid: 0000000000000000f000000000000000, type: 0}
+  m_ExportTrainingData: 0
+  m_TrainingDataDestination: TrainingData
+  m_RealtimeResolution: 2
+  m_ForceWhiteAlbedo: 0
+  m_ForceUpdates: 0
+  m_FinalGather: 0
+  m_FinalGatherRayCount: 256
+  m_FinalGatherFiltering: 1
+  m_PVRCulling: 1
+  m_PVRSampling: 1
+  m_PVRDirectSampleCount: 32
+  m_PVRSampleCount: 500
+  m_PVREnvironmentSampleCount: 500
+  m_PVREnvironmentReferencePointCount: 2048
+  m_LightProbeSampleCountMultiplier: 4
+  m_PVRBounces: 2
+  m_PVRMinBounces: 2
+  m_PVREnvironmentMIS: 0
+  m_PVRFilteringMode: 2
+  m_PVRDenoiserTypeDirect: 0
+  m_PVRDenoiserTypeIndirect: 0
+  m_PVRDenoiserTypeAO: 0
+  m_PVRFilterTypeDirect: 0
+  m_PVRFilterTypeIndirect: 0
+  m_PVRFilterTypeAO: 0
+  m_PVRFilteringGaussRadiusDirect: 1
+  m_PVRFilteringGaussRadiusIndirect: 5
+  m_PVRFilteringGaussRadiusAO: 2
+  m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+  m_PVRFilteringAtrousPositionSigmaIndirect: 2
+  m_PVRFilteringAtrousPositionSigmaAO: 1
 --- !u!1 &831225949
 GameObject:
   m_ObjectHideFlags: 0
@@ -7073,7 +7151,7 @@ GameObject:
   - component: {fileID: 831225950}
   m_Layer: 0
   m_Name: Scenario (12ABAAA/12BAB
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7162,7 +7240,7 @@ GameObject:
   - component: {fileID: 837945359}
   m_Layer: 0
   m_Name: Scenario (8AA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7257,7 +7335,7 @@ GameObject:
   - component: {fileID: 844629250}
   m_Layer: 0
   m_Name: Scenario (10BA2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7344,7 +7422,7 @@ GameObject:
   - component: {fileID: 847142967}
   m_Layer: 0
   m_Name: Scenario (14D) Bad
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7439,7 +7517,7 @@ GameObject:
   - component: {fileID: 850099538}
   m_Layer: 0
   m_Name: Scenario (3B/3AB/3ADB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7531,7 +7609,7 @@ GameObject:
   - component: {fileID: 856678568}
   m_Layer: 0
   m_Name: Scenario (4AC)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7619,7 +7697,7 @@ GameObject:
   - component: {fileID: 858949875}
   m_Layer: 0
   m_Name: Scenario (11)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7715,7 +7793,7 @@ GameObject:
   - component: {fileID: 874449154}
   m_Layer: 0
   m_Name: Scenario (6AAAAB2/6AAAAAABA/6AAAAABBA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7808,7 +7886,7 @@ GameObject:
   - component: {fileID: 880169090}
   m_Layer: 0
   m_Name: Scenario (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7896,7 +7974,7 @@ GameObject:
   - component: {fileID: 882227671}
   m_Layer: 0
   m_Name: Scenario (7Beach)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -7987,7 +8065,7 @@ GameObject:
   - component: {fileID: 887420265}
   m_Layer: 0
   m_Name: Scenario (4A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8076,7 +8154,7 @@ GameObject:
   - component: {fileID: 887572291}
   m_Layer: 0
   m_Name: Scenario (9ABA/9ABAAA/9ABABA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8207,6 +8285,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -8245,7 +8324,7 @@ GameObject:
   - component: {fileID: 928510401}
   m_Layer: 0
   m_Name: Scenario (14A) Bad
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8339,7 +8418,7 @@ GameObject:
   - component: {fileID: 940624396}
   m_Layer: 0
   m_Name: Scenario (10)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8427,7 +8506,7 @@ GameObject:
   - component: {fileID: 963740688}
   m_Layer: 0
   m_Name: Scenario (8End)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8513,7 +8592,7 @@ GameObject:
   - component: {fileID: 982300004}
   m_Layer: 0
   m_Name: Scenario (7AAAAA/7AAAAB) Good
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8602,7 +8681,7 @@ GameObject:
   - component: {fileID: 1004634925}
   m_Layer: 0
   m_Name: Scenario (13ABABA2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8690,7 +8769,7 @@ GameObject:
   - component: {fileID: 1011343024}
   m_Layer: 0
   m_Name: Scenario (4B)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8779,7 +8858,7 @@ GameObject:
   - component: {fileID: 1023760998}
   m_Layer: 0
   m_Name: Scenario (3End)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -8868,7 +8947,7 @@ GameObject:
   - component: {fileID: 1037144846}
   m_Layer: 0
   m_Name: Scenario (12AB/12AAC)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9082,7 +9161,7 @@ GameObject:
   - component: {fileID: 1040694473}
   m_Layer: 0
   m_Name: Scenario (6AAAABC)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9169,7 +9248,7 @@ GameObject:
   - component: {fileID: 1047115356}
   m_Layer: 0
   m_Name: Scenario (14B2) Neutral
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9258,7 +9337,7 @@ GameObject:
   - component: {fileID: 1062227465}
   m_Layer: 0
   m_Name: Scenario (5)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9351,7 +9430,7 @@ GameObject:
   - component: {fileID: 1063479082}
   m_Layer: 0
   m_Name: Scenario (14A) Neutral
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9485,6 +9564,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -9519,7 +9599,7 @@ GameObject:
   - component: {fileID: 1069834448}
   m_Layer: 0
   m_Name: Scenario (13R3C) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9610,7 +9690,7 @@ GameObject:
   - component: {fileID: 1078589319}
   m_Layer: 0
   m_Name: Scenario (6AAAABA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9699,7 +9779,7 @@ GameObject:
   - component: {fileID: 1079246112}
   m_Layer: 0
   m_Name: Scenario (13R4)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9785,7 +9865,7 @@ GameObject:
   - component: {fileID: 1090194309}
   m_Layer: 0
   m_Name: Scenario (12End)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9875,7 +9955,7 @@ GameObject:
   - component: {fileID: 1107565989}
   m_Layer: 0
   m_Name: Scenario (13R2C)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9966,7 +10046,7 @@ GameObject:
   - component: {fileID: 1113023678}
   m_Layer: 0
   m_Name: Scenario (13AA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10057,7 +10137,7 @@ GameObject:
   - component: {fileID: 1118117191}
   m_Layer: 0
   m_Name: Scenario (5R1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10149,7 +10229,7 @@ GameObject:
   - component: {fileID: 1128015786}
   m_Layer: 0
   m_Name: Scenario (9BAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10239,7 +10319,7 @@ GameObject:
   - component: {fileID: 1134006509}
   m_Layer: 0
   m_Name: Scenario (6AAAA2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10327,7 +10407,7 @@ GameObject:
   - component: {fileID: 1164973626}
   m_Layer: 0
   m_Name: Scenario (7Bad)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10416,7 +10496,7 @@ GameObject:
   - component: {fileID: 1169291736}
   m_Layer: 0
   m_Name: Scenario (9ABB/9BAAB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10505,7 +10585,7 @@ GameObject:
   - component: {fileID: 1206502386}
   m_Layer: 0
   m_Name: Scenario (13R2B) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10596,7 +10676,7 @@ GameObject:
   - component: {fileID: 1209842076}
   m_Layer: 0
   m_Name: Scenario (7AAAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10683,7 +10763,7 @@ GameObject:
   - component: {fileID: 1230070590}
   m_Layer: 0
   m_Name: Scenario (10End)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10772,7 +10852,7 @@ GameObject:
   - component: {fileID: 1238122934}
   m_Layer: 0
   m_Name: Scenario (11AAB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10861,7 +10941,7 @@ GameObject:
   - component: {fileID: 1267499619}
   m_Layer: 0
   m_Name: Scenario (13R1A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -10952,7 +11032,7 @@ GameObject:
   - component: {fileID: 1312133443}
   m_Layer: 0
   m_Name: Scenario (11AAA2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11039,7 +11119,7 @@ GameObject:
   - component: {fileID: 1335715937}
   m_Layer: 0
   m_Name: Scenario (10BBA2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11126,7 +11206,7 @@ GameObject:
   - component: {fileID: 1339861469}
   m_Layer: 0
   m_Name: Scenario (14D2) Neutral
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11254,6 +11334,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -11292,7 +11373,7 @@ GameObject:
   - component: {fileID: 1349635568}
   m_Layer: 0
   m_Name: Scenario (5R3)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11384,7 +11465,7 @@ GameObject:
   - component: {fileID: 1349763257}
   m_Layer: 0
   m_Name: Scenario (13A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11474,7 +11555,7 @@ GameObject:
   - component: {fileID: 1355247458}
   m_Layer: 0
   m_Name: Scenario (8A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11563,7 +11644,7 @@ GameObject:
   - component: {fileID: 1370069024}
   m_Layer: 0
   m_Name: Scenario (6AAAAAAB/6AAAAABB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11653,7 +11734,7 @@ GameObject:
   - component: {fileID: 1371478178}
   m_Layer: 0
   m_Name: Scenario (10BBC)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11741,7 +11822,7 @@ GameObject:
   - component: {fileID: 1388841894}
   m_Layer: 0
   m_Name: Scenario (14B2) Bad
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11830,7 +11911,7 @@ GameObject:
   - component: {fileID: 1396590220}
   m_Layer: 0
   m_Name: Scenario (12)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -11920,7 +12001,7 @@ GameObject:
   - component: {fileID: 1416356228}
   m_Layer: 0
   m_Name: Scenario (7AAAAA/7AAAAB) Bad
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12013,7 +12094,7 @@ GameObject:
   - component: {fileID: 1434685970}
   m_Layer: 0
   m_Name: Scenario (7AB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12104,7 +12185,7 @@ GameObject:
   - component: {fileID: 1438157277}
   m_Layer: 0
   m_Name: Scenario (6AC)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12193,7 +12274,7 @@ GameObject:
   - component: {fileID: 1444220221}
   m_Layer: 0
   m_Name: Scenario (14A) Good
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12287,7 +12368,7 @@ GameObject:
   - component: {fileID: 1450725938}
   m_Layer: 0
   m_Name: Scenario (10AB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12376,7 +12457,7 @@ GameObject:
   - component: {fileID: 1454577662}
   m_Layer: 0
   m_Name: Scenario (13End)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12465,7 +12546,7 @@ GameObject:
   - component: {fileID: 1455241140}
   m_Layer: 0
   m_Name: Scenario (5R5)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12597,6 +12678,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12631,7 +12713,7 @@ GameObject:
   - component: {fileID: 1504214890}
   m_Layer: 0
   m_Name: Scenario (12ABA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12719,7 +12801,7 @@ GameObject:
   - component: {fileID: 1504281535}
   m_Layer: 0
   m_Name: Scenario (14D) Good
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12811,7 +12893,7 @@ GameObject:
   - component: {fileID: 1509117766}
   m_Layer: 0
   m_Name: Scenario (9)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12938,6 +13020,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -12972,7 +13055,7 @@ GameObject:
   - component: {fileID: 1523829611}
   m_Layer: 0
   m_Name: Scenario (11) Trash
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13060,7 +13143,7 @@ GameObject:
   - component: {fileID: 1531502035}
   m_Layer: 0
   m_Name: Scenario (14B) Good
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13146,7 +13229,7 @@ GameObject:
   - component: {fileID: 1543157073}
   m_Layer: 0
   m_Name: Scenario (13R1A) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13237,7 +13320,7 @@ GameObject:
   - component: {fileID: 1581717236}
   m_Layer: 0
   m_Name: Scenario (15)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13323,7 +13406,7 @@ GameObject:
   - component: {fileID: 1589858922}
   m_Layer: 0
   m_Name: Scenario (13R2A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13414,7 +13497,7 @@ GameObject:
   - component: {fileID: 1590492452}
   m_Layer: 0
   m_Name: Scenario (13ABABAB1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13503,7 +13586,7 @@ GameObject:
   - component: {fileID: 1597128354}
   m_Layer: 0
   m_Name: Scenario (12ABAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13591,7 +13674,7 @@ GameObject:
   - component: {fileID: 1613916845}
   m_Layer: 0
   m_Name: Scenario (13R2B)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13682,7 +13765,7 @@ GameObject:
   - component: {fileID: 1630182442}
   m_Layer: 0
   m_Name: Scenario (7AAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13773,7 +13856,7 @@ GameObject:
   - component: {fileID: 1650884482}
   m_Layer: 0
   m_Name: Scenario (3)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13859,7 +13942,7 @@ GameObject:
   - component: {fileID: 1652546371}
   m_Layer: 0
   m_Name: Scenario (10ABB/10ABAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -13947,7 +14030,7 @@ GameObject:
   - component: {fileID: 1661007551}
   m_Layer: 0
   m_Name: Scenario (14B) Neutral
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14038,7 +14121,7 @@ GameObject:
   - component: {fileID: 1677324278}
   m_Layer: 0
   m_Name: Scenario (11AA2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14126,7 +14209,7 @@ GameObject:
   - component: {fileID: 1679561552}
   m_Layer: 0
   m_Name: Scenario (13ABABA1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14213,7 +14296,7 @@ GameObject:
   - component: {fileID: 1685429977}
   m_Layer: 0
   m_Name: Scenario (11) Table
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14301,7 +14384,7 @@ GameObject:
   - component: {fileID: 1709062058}
   m_Layer: 0
   m_Name: Scenario (10BB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14435,6 +14518,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14469,7 +14553,7 @@ GameObject:
   - component: {fileID: 1740899824}
   m_Layer: 0
   m_Name: Scenario (6AAA/6ACFA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14557,7 +14641,7 @@ GameObject:
   - component: {fileID: 1741833510}
   m_Layer: 0
   m_Name: Scenario (2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14684,6 +14768,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14762,6 +14847,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -14796,7 +14882,7 @@ GameObject:
   - component: {fileID: 1790103803}
   m_Layer: 0
   m_Name: Scenario (5R4)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14888,7 +14974,7 @@ GameObject:
   - component: {fileID: 1804655204}
   m_Layer: 0
   m_Name: Scenario (6AAAABB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -14977,7 +15063,7 @@ GameObject:
   - component: {fileID: 1828174774}
   m_Layer: 0
   m_Name: Scenario (14B) Bad
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15071,7 +15157,7 @@ GameObject:
   - component: {fileID: 1837372765}
   m_Layer: 0
   m_Name: Scenario (11AB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15159,7 +15245,7 @@ GameObject:
   - component: {fileID: 1847757756}
   m_Layer: 0
   m_Name: Scenario (9AA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15293,6 +15379,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15331,7 +15418,7 @@ GameObject:
   - component: {fileID: 1866447560}
   m_Layer: 0
   m_Name: Scenario (6ACF)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15458,6 +15545,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0, g: 0, b: 0, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -15492,7 +15580,7 @@ GameObject:
   - component: {fileID: 1881793150}
   m_Layer: 0
   m_Name: Scenario (14C2) Bad
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15578,7 +15666,7 @@ GameObject:
   - component: {fileID: 1900963201}
   m_Layer: 0
   m_Name: Scenario (10BAB/10BAAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15665,7 +15753,7 @@ GameObject:
   - component: {fileID: 1927370120}
   m_Layer: 0
   m_Name: Scenario (14D2) Bad
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15754,7 +15842,7 @@ GameObject:
   - component: {fileID: 1938392273}
   m_Layer: 0
   m_Name: Scenario (4C)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15843,7 +15931,7 @@ GameObject:
   - component: {fileID: 1960710723}
   m_Layer: 0
   m_Name: Scenario (10BBA1/10BBB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -15930,7 +16018,7 @@ GameObject:
   - component: {fileID: 1962912946}
   m_Layer: 0
   m_Name: Scenario (6AAAAAB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16061,6 +16149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -16105,6 +16194,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16139,7 +16229,7 @@ GameObject:
   - component: {fileID: 1991620688}
   m_Layer: 0
   m_Name: Scenario (12AA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16227,7 +16317,7 @@ GameObject:
   - component: {fileID: 1995391376}
   m_Layer: 0
   m_Name: Scenario (7AAAAC)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16318,7 +16408,7 @@ GameObject:
   - component: {fileID: 2000854042}
   m_Layer: 0
   m_Name: Scenario (14C) Good
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16411,7 +16501,7 @@ GameObject:
   - component: {fileID: 2009253694}
   m_Layer: 0
   m_Name: Scenario (12AAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16539,6 +16629,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -16573,7 +16664,7 @@ GameObject:
   - component: {fileID: 2034768350}
   m_Layer: 0
   m_Name: Scenario (13ABABAA2)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16660,7 +16751,7 @@ GameObject:
   - component: {fileID: 2059014771}
   m_Layer: 0
   m_Name: Scenario (13AAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16750,7 +16841,7 @@ GameObject:
   - component: {fileID: 2071383881}
   m_Layer: 0
   m_Name: Scenario (6AA/6AB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16836,7 +16927,7 @@ GameObject:
   - component: {fileID: 2071934031}
   m_Layer: 0
   m_Name: Scenario (11AC)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16924,7 +17015,7 @@ GameObject:
   - component: {fileID: 2085225752}
   m_Layer: 0
   m_Name: Scenario (6A)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17017,7 +17108,7 @@ GameObject:
   - component: {fileID: 2091952805}
   m_Layer: 0
   m_Name: Scenario (6AAAAA)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17104,7 +17195,7 @@ GameObject:
   - component: {fileID: 2093956141}
   m_Layer: 0
   m_Name: Scenario (13)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17191,7 +17282,7 @@ GameObject:
   - component: {fileID: 2100366491}
   m_Layer: 0
   m_Name: Scenario (10AA/10ABC/10ABAB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17279,7 +17370,7 @@ GameObject:
   - component: {fileID: 2110834139}
   m_Layer: 0
   m_Name: Scenario (8AAC)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17371,7 +17462,7 @@ GameObject:
   - component: {fileID: 2127016924}
   m_Layer: 0
   m_Name: Scenario (13AB)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17461,7 +17552,7 @@ GameObject:
   - component: {fileID: 2143721827}
   m_Layer: 0
   m_Name: Scenario (13End) (1)
-  m_TagString: Untagged
+  m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -17599,6 +17690,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -17679,6 +17771,7 @@ MonoBehaviour:
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
@@ -17719,6 +17812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Navigation:
     m_Mode: 3
+    m_WrapAround: 0
     m_SelectOnUp: {fileID: 0}
     m_SelectOnDown: {fileID: 0}
     m_SelectOnLeft: {fileID: 0}
@@ -17749,6 +17843,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 8778927294420038827}
+        m_TargetAssemblyTypeName: 
         m_MethodName: OptionA
         m_Mode: 1
         m_Arguments:
