@@ -10,7 +10,6 @@
 /[Bb]uilds/
 /[Ll]ogs/
 /[Uu]ser[Ss]ettings/
-/[Aa]ssets/Drawings/
 *.log
 
 # MemoryCaptures can get excessive in size.
@@ -74,3 +73,7 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Art files not to be included in repo (haven't gotten permission from artist)
+/[Aa]ssets/Drawings/
+/[Aa]ssets/Drawings.meta
