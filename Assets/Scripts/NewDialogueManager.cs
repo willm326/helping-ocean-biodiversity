@@ -32,6 +32,35 @@ public class NewDialogueManager : MonoBehaviour
         readScenario(NextScenario);
     }
 
+    public void DisplayNextSentence()
+    {
+        if (currentState != DialogueState.MakingChoice)
+        {
+            if (sentences.Count != 0)
+            {
+                string sentence = sentences.Dequeue();
+                StopAllCoroutines();
+                StartCoroutine(TypeSentence(sentence));
+            }
+            else
+            {
+                endDialogue();
+            }
+        }
+    }
+
+    void endDialogue()
+    {
+        if (currentState == DialogueState.ReadingScenario)
+        {
+            createButtons();
+        }
+        else //state should be ReadingResponse
+        {
+            readScenario(NextScenario);
+        }
+    }
+
     void readScenario(Scenario scenario)
     {
         currentState = DialogueState.ReadingScenario;
@@ -79,35 +108,6 @@ public class NewDialogueManager : MonoBehaviour
         //choice.Selected = true;
 
         DisplayNextSentence();
-    }
-
-    public void DisplayNextSentence()
-    {
-        if (currentState != DialogueState.MakingChoice)
-        {
-            if (sentences.Count != 0)
-            {
-                string sentence = sentences.Dequeue();
-                StopAllCoroutines();
-                StartCoroutine(TypeSentence(sentence));
-            }
-            else
-            {
-                endDialogue();
-            }
-        }
-    }
-
-    void endDialogue()
-    {
-        if (currentState == DialogueState.ReadingScenario)
-        {
-            createButtons(); 
-        }
-        else //state should be ReadingResponse
-        {
-            readScenario(NextScenario);
-        }
     }
 
     void createButtons()
