@@ -97,6 +97,15 @@ public class Scenario : ScriptableObject
         get => defaultScenario;
         set => defaultScenario = value;
     }
+
+    [SerializeField]
+    [Tooltip("The amount of time (in seconds) the player has to select an option before the default is selected")]
+    float timeLimit;
+    public float TimeLimit
+    {
+        get => timeLimit;
+        set => timeLimit = value;
+    }
 }
 
 [System.Serializable]

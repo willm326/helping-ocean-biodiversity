@@ -26,6 +26,9 @@ public class NewDialogueManager : MonoBehaviour
     DialogueState currentState = DialogueState.ReadingScenario;
     Scenario currentScenario;
 
+    [SerializeField]
+    Timer choiceTimer;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -132,7 +135,17 @@ public class NewDialogueManager : MonoBehaviour
                     {
                         readChoice(currentScenario.Choices[index]);
                     });
+
+                    if (currentScenario.TimeLimit > 0)
+                    {
+                        newButton.onClick.AddListener(() => choiceTimer.Stop());
+                    }
                 }
+            }
+
+            if (currentScenario.TimeLimit > 0)
+            {
+                choiceTimer.SetTimer(currentScenario.TimeLimit, delegate { readScenario(currentScenario.DefaultScenario); });
             }
         }
     }

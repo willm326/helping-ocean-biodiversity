@@ -1797,6 +1797,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1340766787}
   - component: {fileID: 1340766789}
+  - component: {fileID: 1340766790}
   - component: {fileID: 1340766788}
   m_Layer: 5
   m_Name: Timer
@@ -1804,7 +1805,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1340766787
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1831,7 +1832,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340766786}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
   m_Name: 
@@ -1866,6 +1867,20 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1340766786}
   m_CullTransparentMesh: 0
+--- !u!114 &1340766790
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1340766786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f88bbc7865380247a517d530dd92317, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  secondsRemaining: 0
+  clock: {fileID: 1340766788}
 --- !u!1 &1495951223
 GameObject:
   m_ObjectHideFlags: 0
@@ -2055,6 +2070,7 @@ MonoBehaviour:
   ChoiceButton: {fileID: 4971060358503706293, guid: 69a844e8dfd32544d8cb68cafc6818fc,
     type: 3}
   ButtonLayer: {fileID: 1067099013}
+  choiceTimer: {fileID: 0}
 --- !u!4 &1532592808
 Transform:
   m_ObjectHideFlags: 0
