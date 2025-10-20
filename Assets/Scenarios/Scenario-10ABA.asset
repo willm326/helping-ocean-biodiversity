@@ -22,11 +22,11 @@ MonoBehaviour:
   choices:
   - buttonText: Try to take the egg home
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: aa80c21be5f91c44d98717d4b83fa2c8, type: 2}
     responseSentences: []
   - buttonText: Put the egg down and leave it there
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: a325b85ff7d0747459cc4054f6e9ff79, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

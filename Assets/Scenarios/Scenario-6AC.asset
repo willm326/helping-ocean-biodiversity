@@ -22,9 +22,9 @@ MonoBehaviour:
   choices:
   - buttonText: Swerve out of the way
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 55cc4329e1c5ccc469a1c33d8d506f27, type: 2}
     responseSentences:
     - You manage to avoid hitting the turtle and continue to the beach.
   savedAnimals: 0
   hurtAnimals: 0
-  defaultScenario: {fileID: 0}
+  defaultScenario: {fileID: 11400000, guid: 9c7be633ea3e6da4d925d5f0c0ce294d, type: 2}

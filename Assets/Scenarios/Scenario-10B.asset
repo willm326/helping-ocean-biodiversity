@@ -22,13 +22,13 @@ MonoBehaviour:
   choices:
   - buttonText: Take pictures as well
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: f0a7a186b4442fa458d4fd03f6aa9e05, type: 2}
     responseSentences:
     - You take some photos of the seals, until a life guard arrives, trying to clear
       the people in the area.
   - buttonText: Tell them to stop taking pictures
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 8589d1dbb21b94f4e8dd87e65a74fc8d, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

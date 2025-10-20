@@ -23,7 +23,7 @@ MonoBehaviour:
   choices:
   - buttonText: Bring it back to the boat to get it checked out
     moralValue: 2
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 32d22b5341ec43749ba0ed1eef389a2f, type: 2}
     responseSentences:
     - 'You bring it back to the boat where the guide is. '
     - At the boat they have a supply kit and the guide begins helping the injured
@@ -31,13 +31,13 @@ MonoBehaviour:
     - You return the scuba diving equipment and decide to go get lunch.
   - buttonText: Let it go with accomplishment
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: e8f3c2c7b30ac33468f7404f4ee87c86, type: 2}
     responseSentences:
     - You decide to leave the fish, letting it go back into the water.
     - You decide to go get lunch.
   - buttonText: Try to check the fish for injuries yourself
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 37c1c348690e8a340930365349fe6483, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

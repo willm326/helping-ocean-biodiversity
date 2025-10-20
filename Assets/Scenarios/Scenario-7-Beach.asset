@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
-  m_Name: Scenario-7
+  m_Name: Scenario-7-Beach
   m_EditorClassIdentifier: 
   sentences:
   - 'As you arrive to the beach, you see an advertisement for a scuba diving event
@@ -24,11 +24,13 @@ MonoBehaviour:
   - buttonText: Go to the scuba diving event
     moralValue: 0
     nextScenario: {fileID: 11400000, guid: dbc82f38a362470459e12d4ec42fa37a, type: 2}
-    responseSentences: []
+    responseSentences:
+    - Prior to attending the event, you drop off the turtle by the water.
   - buttonText: Go explore the beach
     moralValue: 0
     nextScenario: {fileID: 11400000, guid: eb5275730af8336479b4e3af42bb5c52, type: 2}
-    responseSentences: []
-  savedAnimals: 0
-  hurtAnimals: 0
+    responseSentences:
+    - You drop off the turtle by the water.
+  savedAnimals: 2
+  hurtAnimals: 2
   defaultScenario: {fileID: 0}

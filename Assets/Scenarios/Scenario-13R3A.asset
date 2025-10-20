@@ -23,7 +23,7 @@ MonoBehaviour:
   choices:
   - buttonText: Release it back into the water with triumph
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 6d39e1ef8af843b4996de32062945d0f, type: 2}
     responseSentences:
     - You decide to release the fish back into the waters.
   savedAnimals: 0

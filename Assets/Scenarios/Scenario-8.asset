@@ -23,11 +23,11 @@ MonoBehaviour:
   choices:
   - buttonText: Try to help it
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: d7ffc35e78349d54f8b029cad8c4b3d1, type: 2}
     responseSentences: []
   - buttonText: Leave it alone
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: e8f3c2c7b30ac33468f7404f4ee87c86, type: 2}
     responseSentences:
     - You leave the fish alone and decide to go get lunch.
   savedAnimals: 0

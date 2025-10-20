@@ -21,11 +21,11 @@ MonoBehaviour:
   choices:
   - buttonText: Swim around on the surface
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 5afa5144c89453f45b4b41a4bffdf6ff, type: 2}
     responseSentences: []
   - buttonText: Try to go down as deep as you can
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 913fda58af8537a448b08f4dc4dbe743, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

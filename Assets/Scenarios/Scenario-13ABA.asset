@@ -25,11 +25,11 @@ MonoBehaviour:
   choices:
   - buttonText: Stay with the group of people
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: a78587759ac306e45899120bea97e27a, type: 2}
     responseSentences: []
   - buttonText: Follow the person that's leaving
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 97d93c7b2c5a051408e11916c194968e, type: 2}
     responseSentences: []
   savedAnimals: 8
   hurtAnimals: 0

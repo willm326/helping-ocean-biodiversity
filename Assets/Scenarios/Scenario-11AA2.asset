@@ -21,12 +21,12 @@ MonoBehaviour:
   choices:
   - buttonText: Apologize for feeding the bird
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 9e9f14bf3ea022746ac55324f0c28a99, type: 2}
     responseSentences:
     - You apologize to the employee and the employee nods in response.
   - buttonText: Ignore the employee's advice
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 7c763d14aee65f946837007c8a408ace, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

@@ -10,23 +10,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
-  m_Name: Scenario-13
+  m_Name: Scenario-7-Bad
   m_EditorClassIdentifier: 
   sentences:
-  - When you arrive, the tidal pools aren't too populated.
+  - 'As you arrive to the beach, you see an advertisement for a scuba diving event
+    happening right now. '
+  - Do you you decide to attend?
   speaker: 
   character: {fileID: 0}
   environment: {fileID: 0}
-  overlay: {fileID: 21300000, guid: ac510f8a4b54a354b8fb84c4bdab22ed, type: 3}
+  overlay: {fileID: 21300000, guid: 9a00051d993350847bc24ca7d6797c66, type: 3}
   choices:
-  - buttonText: Continue walking to the secluded part of the pools
+  - buttonText: Go to the scuba diving event
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 73a7e4727120bb346bf37106187b5521, type: 2}
+    nextScenario: {fileID: 11400000, guid: dbc82f38a362470459e12d4ec42fa37a, type: 2}
     responseSentences: []
-  - buttonText: Go to find the nearest pool to check it out
+  - buttonText: Go explore the beach
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 53977f4dd9c757a49b2bc2696d434786, type: 2}
+    nextScenario: {fileID: 11400000, guid: eb5275730af8336479b4e3af42bb5c52, type: 2}
     responseSentences: []
   savedAnimals: 0
-  hurtAnimals: 0
+  hurtAnimals: 2
   defaultScenario: {fileID: 0}

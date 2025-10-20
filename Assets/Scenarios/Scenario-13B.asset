@@ -23,11 +23,11 @@ MonoBehaviour:
   choices:
   - buttonText: Go to the more secluded area
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 73a7e4727120bb346bf37106187b5521, type: 2}
     responseSentences: []
   - buttonText: Just decide to head home
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

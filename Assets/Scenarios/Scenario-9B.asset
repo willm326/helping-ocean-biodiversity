@@ -22,11 +22,11 @@ MonoBehaviour:
   choices:
   - buttonText: Panic and swim to the top
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: ffcaf0ee0fe71c946b073ae6116b7e73, type: 2}
     responseSentences: []
   - buttonText: Look around to see it more clearly
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: ffcaf0ee0fe71c946b073ae6116b7e73, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

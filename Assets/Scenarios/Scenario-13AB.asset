@@ -24,11 +24,11 @@ MonoBehaviour:
   choices:
   - buttonText: Call for help on the phone
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 3255445325f680846922c0b68fc34e83, type: 2}
     responseSentences: []
   - buttonText: Leave it there
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: ee759f394d3f02a4b99bde7227a40e81, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

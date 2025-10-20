@@ -22,11 +22,11 @@ MonoBehaviour:
   choices:
   - buttonText: Try to look for the shark
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 26585d874269dde428505a4f100301be, type: 2}
     responseSentences: []
   - buttonText: Report back to the guide
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: de28f9f5f18bfbb46a4dad32a9c05927, type: 2}
     responseSentences:
     - You decide to find the guide and report the shark attack.
   savedAnimals: 0

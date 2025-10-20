@@ -22,13 +22,13 @@ MonoBehaviour:
   choices:
   - buttonText: Leave the turtle there
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 55cc4329e1c5ccc469a1c33d8d506f27, type: 2}
     responseSentences:
     - 'You decide to leave the Turtle on the road. '
     - Hopefully it will be okay.
   - buttonText: Bring the turtle with you into the car
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: b6122b29fa8f51c46859bdced6e61b87, type: 2}
     responseSentences: []
   savedAnimals: 2
   hurtAnimals: 0

@@ -32,11 +32,11 @@ MonoBehaviour:
     responseSentences: []
   - buttonText: Leave the pools and go to the animal
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: c047e2562fe7af844a8ef705477a0aab, type: 2}
     responseSentences: []
   - buttonText: Decide to head back
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

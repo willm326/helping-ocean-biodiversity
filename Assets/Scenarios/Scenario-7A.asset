@@ -22,14 +22,14 @@ MonoBehaviour:
   choices:
   - buttonText: Put on the swim gear
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 372cb77c30ed98c448addab23eb57c6a, type: 2}
     responseSentences:
     - 'You put on the swim gear prior to going to the docks. '
     - As you get onto the boat a couple of other people join you and you begin heading
       towards a scuba diving spot.
   - buttonText: Continue on to the docks
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: ecd4c47f41ffcfc459241221ec58b341, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

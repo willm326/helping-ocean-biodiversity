@@ -23,11 +23,11 @@ MonoBehaviour:
   choices:
   - buttonText: Put away your phone
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 303e8dab0b2f84e4996bb7d7f28a76e2, type: 2}
     responseSentences: []
   - buttonText: Continue taking pictures
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: e8f3c2c7b30ac33468f7404f4ee87c86, type: 2}
     responseSentences:
     - You continue to take pictures, causing the lifeguard to forcibly remove you
       from the beach.

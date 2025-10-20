@@ -22,21 +22,21 @@ MonoBehaviour:
   choices:
   - buttonText: Taking photos of the seals will give them cancer
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 22a7a2e5e0442ff4a99d0e2a6ab7850a, type: 2}
     responseSentences:
     - You tell them that taking photos of the monk seals can give them cancer.
     - However, they continue to take pictures, until a life guard arrives, working
       to clear the people in the area.
   - buttonText: The seals will attack if they take too many pictures
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 22a7a2e5e0442ff4a99d0e2a6ab7850a, type: 2}
     responseSentences:
     - You tell them that the monk seals will attack if they take too many pictures.
     - However, they continue to take pictures, until a life guard arrives, working
       to clear the people in the area.
   - buttonText: Taking photos cause the seals distress
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: b5ce7c1b3900481468e93ff6539c8fcb, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

@@ -22,11 +22,11 @@ MonoBehaviour:
   choices:
   - buttonText: Go explore the secluded area of the beach
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 688d461af97d26e42812e6637d6bb2ea, type: 2}
     responseSentences: []
   - buttonText: Go to your car to go get lunch
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: e8f3c2c7b30ac33468f7404f4ee87c86, type: 2}
     responseSentences: []
   savedAnimals: 4
   hurtAnimals: 0

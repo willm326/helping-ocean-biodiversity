@@ -23,12 +23,12 @@ MonoBehaviour:
   choices:
   - buttonText: Release it back into the water with triumph
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 6d39e1ef8af843b4996de32062945d0f, type: 2}
     responseSentences:
     - You decide to release the crab back into the waters.
   - buttonText: Try to take it home
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
     responseSentences:
     - You decide to take the crab home.
   savedAnimals: 0

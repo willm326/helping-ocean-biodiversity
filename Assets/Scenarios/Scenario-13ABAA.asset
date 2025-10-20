@@ -24,18 +24,18 @@ MonoBehaviour:
   choices:
   - buttonText: Ask them if it's going to be okay
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: ceb5d4fbe098d394a9ea3d2adc813e0a, type: 2}
     responseSentences: []
   - buttonText: Help them with the manatee
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
     responseSentences:
     - 'You decide to help them before leaving. The skin of the manatee feels smooth
       to the touch. '
     - Afterwards you decide to head back to your car to drive home.
   - buttonText: Decide to go
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

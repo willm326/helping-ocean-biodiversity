@@ -23,11 +23,11 @@ MonoBehaviour:
   choices:
   - buttonText: Nod and leave them to it
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
     responseSentences: []
   - buttonText: Help them
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
     responseSentences:
     - 'You decide to help them before leaving. The skin of the manatee feels smooth
       to the touch. '

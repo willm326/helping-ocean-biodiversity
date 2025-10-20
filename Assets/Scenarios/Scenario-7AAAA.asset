@@ -21,11 +21,11 @@ MonoBehaviour:
   choices:
   - buttonText: Lecture the child, but let them keep the coral
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 811e5f4e266d4fd4687f0701f69a550a, type: 2}
     responseSentences: []
   - buttonText: Lecture the child, and make them drop the coral
     moralValue: 2
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 299a1ee6bc348424e88a79bd57d8afce, type: 2}
     responseSentences: []
   - buttonText: Take the coral away from them and keep it for yourself
     moralValue: -2

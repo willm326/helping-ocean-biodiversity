@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
-  m_Name: Scenario-7AAAAA-Good
+  m_Name: Scenario-7AAAAA
   m_EditorClassIdentifier: 
   sentences:
   - 'You lecture the child, and the parent of the child approaches you as you finish
@@ -23,4 +23,4 @@ MonoBehaviour:
   choices: []
   savedAnimals: 0
   hurtAnimals: 0
-  defaultScenario: {fileID: 0}
+  defaultScenario: {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}

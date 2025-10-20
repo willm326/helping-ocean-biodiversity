@@ -22,11 +22,11 @@ MonoBehaviour:
   choices:
   - buttonText: Go back to sleep
     moralValue: -2
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 28f87f35cf2efa541aaf9d6e346d5480, type: 2}
     responseSentences: []
   - buttonText: Go on a walk
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 1c03e8d955c9d994e824d75cd42f5ea4, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

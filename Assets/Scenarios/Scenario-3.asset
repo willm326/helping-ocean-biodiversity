@@ -20,15 +20,15 @@ MonoBehaviour:
   choices:
   - buttonText: Approach the creature and try to help it
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: def297269d859ce44a6a93e831a3c0b5, type: 2}
     responseSentences: []
   - buttonText: Use your phone to call for help
     moralValue: 2
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: fa10cd41e61f1dd4899837161950d108, type: 2}
     responseSentences: []
   - buttonText: Continue walking
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 522aa0cf551994c4e9af4eba1e48e491, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

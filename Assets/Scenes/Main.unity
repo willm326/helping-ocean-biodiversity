@@ -155,7 +155,7 @@ MonoBehaviour:
   dialogue:
     Scenario: 10BAA
     nextScenario: 
-    nextScenarioA: 10BAAA
+    nextScenarioA: 10BAB
     nextScenarioB: 11
     nextScenarioC: 
     nextScenarioD: 
@@ -1491,13 +1491,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    Scenario: 5R2
+    Scenario: 5
     nextScenario: 6
-    nextScenarioA: 5R3
-    nextScenarioB: 5R3
-    nextScenarioC: 5R3
-    nextScenarioD: 5R3
-    nextScenarioE: 5R3
+    nextScenarioA: 5
+    nextScenarioB: 5
+    nextScenarioC: 5
+    nextScenarioD: 5
+    nextScenarioE: 5
     nextScenarioF: 6
     speaker: 
     Environment: {fileID: 0}
@@ -7986,7 +7986,7 @@ GameObject:
   - component: {fileID: 882227672}
   - component: {fileID: 882227671}
   m_Layer: 0
-  m_Name: Scenario (7Beach)
+  m_Name: Scenario (7) Beach
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8604,7 +8604,7 @@ GameObject:
   - component: {fileID: 982300005}
   - component: {fileID: 982300004}
   m_Layer: 0
-  m_Name: Scenario (7AAAAA) Good
+  m_Name: Scenario (7AAAAA)
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -8623,7 +8623,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    Scenario: 7AAAAA Good
+    Scenario: 7AAAAA
     nextScenario: 8
     nextScenarioA: 
     nextScenarioB: 
@@ -9369,12 +9369,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogue:
     Scenario: 5
-    nextScenario: 5R
-    nextScenarioA: 5R
-    nextScenarioB: 5R
-    nextScenarioC: 5R
-    nextScenarioD: 5R
-    nextScenarioE: 5R
+    nextScenario: 5
+    nextScenarioA: 5
+    nextScenarioB: 5
+    nextScenarioC: 5
+    nextScenarioD: 5
+    nextScenarioE: 5
     nextScenarioF: 6
     speaker: 
     Environment: {fileID: 0}
@@ -10168,13 +10168,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    Scenario: 5R
+    Scenario: 5
     nextScenario: 6
-    nextScenarioA: 5R2
-    nextScenarioB: 5R2
-    nextScenarioC: 5R2
-    nextScenarioD: 5R2
-    nextScenarioE: 5R2
+    nextScenarioA: 5
+    nextScenarioB: 5
+    nextScenarioC: 5
+    nextScenarioD: 5
+    nextScenarioE: 5
     nextScenarioF: 6
     speaker: 
     Environment: {fileID: 0}
@@ -10419,7 +10419,7 @@ GameObject:
   - component: {fileID: 1164973627}
   - component: {fileID: 1164973626}
   m_Layer: 0
-  m_Name: Scenario (7Bad)
+  m_Name: Scenario (7) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -10710,7 +10710,7 @@ MonoBehaviour:
     Scenario: 7AAAA
     nextScenario: 
     nextScenarioA: 7AAAAA
-    nextScenarioB: 7AAAAA
+    nextScenarioB: 7AAAAA Bad
     nextScenarioC: 
     nextScenarioD: 
     nextScenarioE: 
@@ -10885,9 +10885,9 @@ MonoBehaviour:
   dialogue:
     Scenario: 11AAB
     nextScenario: 
-    nextScenarioA: 11AABA
-    nextScenarioB: 11AABB
-    nextScenarioC: 11AABC
+    nextScenarioA: 11 Recycle
+    nextScenarioB: 11 Trash
+    nextScenarioC: 11 Table
     nextScenarioD: 
     nextScenarioE: 
     nextScenarioF: 
@@ -11065,9 +11065,9 @@ MonoBehaviour:
   dialogue:
     Scenario: 11AAA2
     nextScenario: 
-    nextScenarioA: 11AABA
-    nextScenarioB: 11AABB
-    nextScenarioC: 11AABC
+    nextScenarioA: 11 Recycle
+    nextScenarioB: 11 Trash
+    nextScenarioC: 11 Table
     nextScenarioD: 
     nextScenarioE: 
     nextScenarioF: 
@@ -11404,13 +11404,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    Scenario: 5R3
+    Scenario: 5
     nextScenario: 6
-    nextScenarioA: 5R4
-    nextScenarioB: 5R4
-    nextScenarioC: 5R4
-    nextScenarioD: 5R4
-    nextScenarioE: 5R4
+    nextScenarioA: 5
+    nextScenarioB: 5
+    nextScenarioC: 5
+    nextScenarioD: 5
+    nextScenarioE: 5
     nextScenarioF: 6
     speaker: 
     Environment: {fileID: 0}
@@ -12577,13 +12577,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    Scenario: 5R5
+    Scenario: 5
     nextScenario: 6
-    nextScenarioA: 
-    nextScenarioB: 
-    nextScenarioC: 
-    nextScenarioD: 
-    nextScenarioE: 
+    nextScenarioA: 5
+    nextScenarioB: 5
+    nextScenarioC: 5
+    nextScenarioD: 5
+    nextScenarioE: 5
     nextScenarioF: 6
     speaker: 
     Environment: {fileID: 0}
@@ -14913,13 +14913,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue:
-    Scenario: 5R4
+    Scenario: 5
     nextScenario: 6
-    nextScenarioA: 5R5
-    nextScenarioB: 5R5
-    nextScenarioC: 5R5
-    nextScenarioD: 5R5
-    nextScenarioE: 5R5
+    nextScenarioA: 5
+    nextScenarioB: 5
+    nextScenarioC: 5
+    nextScenarioD: 5
+    nextScenarioE: 5
     nextScenarioF: 6
     speaker: 
     Environment: {fileID: 0}
@@ -15190,9 +15190,9 @@ MonoBehaviour:
   dialogue:
     Scenario: 11AB
     nextScenario: 
-    nextScenarioA: 11AABA
-    nextScenarioB: 11AABB
-    nextScenarioC: 11AABC
+    nextScenarioA: 11 Recycle
+    nextScenarioB: 11 Trash
+    nextScenarioC: 11 Table
     nextScenarioD: 
     nextScenarioE: 
     nextScenarioF: 
@@ -16960,9 +16960,9 @@ MonoBehaviour:
   dialogue:
     Scenario: 11AC
     nextScenario: 
-    nextScenarioA: 11AABA
-    nextScenarioB: 11AABB
-    nextScenarioC: 11AABC
+    nextScenarioA: 11 Recycle
+    nextScenarioB: 11 Trash
+    nextScenarioC: 11 Table
     nextScenarioD: 
     nextScenarioE: 
     nextScenarioF: 
@@ -17564,7 +17564,7 @@ GameObject:
   - component: {fileID: 2143721828}
   - component: {fileID: 2143721827}
   m_Layer: 0
-  m_Name: Scenario (13End) (1)
+  m_Name: Scenario (13End) Bad
   m_TagString: Scenario
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

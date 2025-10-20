@@ -24,11 +24,11 @@ MonoBehaviour:
   choices:
   - buttonText: Stay at the tidal pools
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: 8f5ed50a1d9ac944b82bc36dfd452e89, type: 2}
     responseSentences: []
   - buttonText: Go to the animal
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: c047e2562fe7af844a8ef705477a0aab, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0

@@ -20,14 +20,14 @@ MonoBehaviour:
   choices:
   - buttonText: Bring it to the authorities
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: d3b9453e545dbc44c93c45c7beb68fa0, type: 2}
     responseSentences:
     - 'You decide to bring the sea turtle into the car. '
     - You drive over to the authorities to drop off the turtle.
     - When you do, the person asks you a question.
   - buttonText: Bring it with you to the beach to let it go
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: e4512191476f3c644bf613854081bfdf, type: 2}
     responseSentences:
     - You bring the turtle with you into the car and begin driving to the ocean.
   savedAnimals: 0

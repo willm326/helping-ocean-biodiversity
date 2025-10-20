@@ -9,6 +9,7 @@ public class Convert : MonoBehaviour
     private void Start()
     {
         convertObjects();
+        AssetDatabase.SaveAssets();
         Debug.Log("finished");
     }
 
@@ -148,6 +149,7 @@ public class Convert : MonoBehaviour
     {
         foreach (Tuple<Scenario, Dialogue> tuple in list)
         {
+            Debug.Log("tuple");
             string path = "";
             if (tuple.Item2.nextScenario != "")
             {
@@ -191,6 +193,8 @@ public class Convert : MonoBehaviour
                     tuple.Item1.Choices[choice].NextScenario = getAsset(tuple.Item2.nextScenarioF);
                 }
             }
+            AssetDatabase.Refresh();
+            EditorUtility.SetDirty(tuple.Item1);
         }
     }
 
@@ -199,7 +203,7 @@ public class Convert : MonoBehaviour
         string path = "";
         if (scenario != "")
         {
-            path = "Assets/Scenarios/Scenario-" + scenario + ".asset";
+            path = "Assets/Scenarios/Scenario-" + convertName(scenario) + ".asset";
             var asset = AssetDatabase.LoadAssetAtPath(path, typeof(Scenario));
             return (Scenario)asset;
         }

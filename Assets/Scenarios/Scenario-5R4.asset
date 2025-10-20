@@ -21,33 +21,33 @@ MonoBehaviour:
   choices:
   - buttonText: Put on makeup
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: cd0a06df0748a9f41af1d952a33087f1, type: 2}
     responseSentences:
     - 'You apply some makeup to your face. '
   - buttonText: Put on your beach gear
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: cd0a06df0748a9f41af1d952a33087f1, type: 2}
     responseSentences:
     - You pick out your favorite swim suit and put it on.
   - buttonText: Pack snacks
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: cd0a06df0748a9f41af1d952a33087f1, type: 2}
     responseSentences:
     - 'You pack your favorite snacks: Pretzels, candy bars, apples, and potato chips.'
   - buttonText: Put on sunscreen
     moralValue: -1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: cd0a06df0748a9f41af1d952a33087f1, type: 2}
     responseSentences:
     - You apply sunscreen to protect yourself from the sun.
   - buttonText: Bring a first aid kit
     moralValue: 1
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: cd0a06df0748a9f41af1d952a33087f1, type: 2}
     responseSentences:
     - You pack a first aid kit. You never know when it might come in handy.
   - buttonText: Leave for the beach
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenario: {fileID: 11400000, guid: b51b73e9c5df6084c8c5cee61dfd95ae, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
-  defaultScenario: {fileID: 0}
+  defaultScenario: {fileID: 11400000, guid: b51b73e9c5df6084c8c5cee61dfd95ae, type: 2}
