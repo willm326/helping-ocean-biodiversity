@@ -3,9 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum DialogueState
+{
+    ReadingScenario, //The Scenario's sentences are being read
+    MakingChoice, //The player has buttons to make a decision, reading should stop
+    ReadingResponse //The response to the player's choice is being read
+}
+
 public class NewDialogueManager : MonoBehaviour
 {
-    public AudioSource Music;
     public AudioSource Type;
     private Queue<string> sentences;
     public Image Environment;
@@ -16,20 +22,8 @@ public class NewDialogueManager : MonoBehaviour
     public Scenario NextScenario;
     public Button ChoiceButton;
     public GameObject ButtonLayer;
-    public Image Fish;
-    public Image Shark;
-    public Image MonkSeal;
-    public Image Turtle;
-    public Image Vaquita;
-    public Image Bird;
-    public Image Manatee;
-    public bool chosen = false;
-    public GameObject NextButton;
-    public GameObject StoryText;
-    public GameObject PlayAgain;
-    public GameObject PlayAgainPerfect;
 
-    bool choosing = false;
+    DialogueState currentState = DialogueState.ReadingScenario;
     Scenario currentScenario;
 
     void Start()
@@ -40,7 +34,7 @@ public class NewDialogueManager : MonoBehaviour
 
     void readScenario(Scenario scenario)
     {
-        choosing = false;
+        currentState = DialogueState.ReadingScenario;
 
         if (scenario != null)
         {
@@ -69,6 +63,8 @@ public class NewDialogueManager : MonoBehaviour
 
     void readChoice(Choice choice)
     {
+        currentState = DialogueState.ReadingResponse;
+
         WorldVariables.morals += choice.MoralValue;
 
         NextScenario = choice.NextScenario;
@@ -87,48 +83,56 @@ public class NewDialogueManager : MonoBehaviour
 
     public void DisplayNextSentence()
     {
-        if (sentences.Count != 0)
-        { 
-            string sentence = sentences.Dequeue();
-            StopAllCoroutines();
-            StartCoroutine(TypeSentence(sentence));
-        }
-        else if (!choosing)
+        if (currentState != DialogueState.MakingChoice)
         {
-            createButtons();
-        }
-        else
-        {
-            readScenario(NextScenario);
+            if (sentences.Count != 0)
+            {
+                string sentence = sentences.Dequeue();
+                StopAllCoroutines();
+                StartCoroutine(TypeSentence(sentence));
+            }
+            else
+            {
+                endDialogue();
+            }
         }
     }
 
     void endDialogue()
     {
-        Debug.Log("Scenario Finished");
-        createButtons();
+        if (currentState == DialogueState.ReadingScenario)
+        {
+            createButtons(); 
+        }
+        else //state should be ReadingResponse
+        {
+            readScenario(NextScenario);
+        }
     }
 
     void createButtons()
     {
+        currentState = DialogueState.MakingChoice;
+
         if (currentScenario.Choices.Count == 0)
         {
             readScenario(currentScenario.DefaultScenario);
         }
         else
         {
-            choosing = true;
             for (int i = 0; i < currentScenario.Choices.Count; i++)
             {
-                if (currentScenario.Choices[i].Selected)
+                if (!currentScenario.Choices[i].Selected)
                 {
-                    continue;
-                }
-                Button newButton = Instantiate(ChoiceButton, ButtonLayer.transform);
-                newButton.GetComponentInChildren<Text>().text = currentScenario.Choices[i].ButtonText;
+                    Button newButton = Instantiate(ChoiceButton, ButtonLayer.transform);
+                    newButton.GetComponentInChildren<Text>().text = currentScenario.Choices[i].ButtonText;
 
-                int index = i;
-                newButton.onClick.AddListener(delegate { readChoice(currentScenario.Choices[index]); });
+                    int index = i; //Used to specify index of Choices array. If i is used all of the functions will use the final value of i
+                    newButton.onClick.AddListener(() =>
+                    {
+                        readChoice(currentScenario.Choices[index]);
+                    });
+                }
             }
         }
     }

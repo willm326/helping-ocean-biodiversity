@@ -394,7 +394,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &126398386
 GameObject:
@@ -838,7 +838,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &512778661
 GameObject:
@@ -1000,133 +1000,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &584396768
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 584396770}
-  - component: {fileID: 584396769}
-  - component: {fileID: 584396771}
-  m_Layer: 0
-  m_Name: DialogueManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!114 &584396769
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584396768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e5da1a280ba18e84aa7e19edb1478929, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Music: {fileID: 123840279}
-  Type: {fileID: 1040049592}
-  sentencesA: []
-  sentencesB: []
-  sentencesC: []
-  sentencesD: []
-  sentencesE: []
-  sentencesF: []
-  OptionAText: 
-  OptionBText: 
-  OptionCText: 
-  OptionDText: 
-  OptionEText: 
-  OptionFText: 
-  Environment: {fileID: 385723389}
-  Character: {fileID: 784025143}
-  Cinematic: {fileID: 359038431}
-  Name: {fileID: 1859971214}
-  dialogueText: {fileID: 1782765398}
-  numberOfOptions: 0
-  scenario: 
-  nextScenario: 
-  nextScenarioA: 
-  nextScenarioB: 
-  nextScenarioC: 
-  nextScenarioD: 
-  nextScenarioE: 
-  nextScenarioF: 
-  OptionA: {fileID: 4971060358503706293, guid: 69a844e8dfd32544d8cb68cafc6818fc, type: 3}
-  OptionB: {fileID: 2641793683944574392, guid: bc3d585367f3bb047a9a10d670cf663f, type: 3}
-  OptionC: {fileID: 5538733956825249301, guid: 875f40f9ec735264ea21a2ad63d21169, type: 3}
-  OptionD: {fileID: 6874825216113643278, guid: 5d6eb5302965abc43a1078a5284531f8, type: 3}
-  OptionE: {fileID: 1822161515640304906, guid: 7f921112e9d25a54e9cd86d104a777a3, type: 3}
-  OptionF: {fileID: 5529363723467571493, guid: 69343e5694569ab42ab8d0b57a051171, type: 3}
-  ButtonLayer: {fileID: 809028833}
-  scoreFine: {fileID: 21300000, guid: 48556034bf409d649965df7396772104, type: 3}
-  scoreGood: {fileID: 21300000, guid: bb98a5801464bd941b8fc61999c4c535, type: 3}
-  scoreBad: {fileID: 21300000, guid: 3c4f9a5feaf63b441982a83c5d9ae3bc, type: 3}
-  scorePerfect: {fileID: 21300000, guid: f40077e9e9ca7274f98f393d688bfcc1, type: 3}
-  scoreTerrible: {fileID: 21300000, guid: 6b478ec2d3d016b4892be3db2549903a, type: 3}
-  Fish: {fileID: 394558596}
-  Shark: {fileID: 1495951225}
-  MonkSeal: {fileID: 2022179726}
-  Turtle: {fileID: 1783585992}
-  Vaquita: {fileID: 1516530698}
-  Bird: {fileID: 126398388}
-  Manatee: {fileID: 1739280036}
-  chosen: 0
-  timed: 0
-  timeStart: 0
-  timeLimit: 0
-  startTime: 0
-  time: 0
-  minutes: 0
-  seconds: 0
-  timer: {fileID: 1340766788}
-  moralsA: 0
-  moralsB: 0
-  moralsC: 0
-  moralsD: 0
-  moralsE: 0
-  moralsF: 0
-  positiveMorals: 0
-  negativeMorals: 0
-  NextButton: {fileID: 340942177}
-  StoryText: {fileID: 1782765396}
-  PlayAgain: {fileID: 3010611170220502198}
-  PlayAgainPerfect: {fileID: 92809477}
-  quote: '"'
---- !u!4 &584396770
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584396768}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 872.4232, y: 764.8879, z: -114.707344}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &584396771
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 584396768}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8e7955da445fec94fb72321f3c3cea13, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &719634105
 GameObject:
   m_ObjectHideFlags: 0
@@ -1536,7 +1411,7 @@ RectTransform:
   - {fileID: 1739280035}
   - {fileID: 92809478}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -1808,7 +1683,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1067099013
 GameObject:
@@ -1904,7 +1779,7 @@ MonoBehaviour:
     m_Top: 150
     m_Bottom: 0
   m_ChildAlignment: 4
-  m_Spacing: 100
+  m_Spacing: 10
   m_ChildForceExpandWidth: 0
   m_ChildForceExpandHeight: 0
   m_ChildControlWidth: 0
@@ -2170,7 +2045,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 081c8d9480efe81409967f973d727b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Music: {fileID: 123840279}
   Type: {fileID: 1040049592}
   Environment: {fileID: 385723389}
   Character: {fileID: 784025143}
@@ -2181,18 +2055,6 @@ MonoBehaviour:
   ChoiceButton: {fileID: 4971060358503706293, guid: 69a844e8dfd32544d8cb68cafc6818fc,
     type: 3}
   ButtonLayer: {fileID: 1067099013}
-  Fish: {fileID: 394558596}
-  Shark: {fileID: 126398388}
-  MonkSeal: {fileID: 0}
-  Turtle: {fileID: 0}
-  Vaquita: {fileID: 0}
-  Bird: {fileID: 0}
-  Manatee: {fileID: 0}
-  chosen: 0
-  NextButton: {fileID: 758917593}
-  StoryText: {fileID: 1782765396}
-  PlayAgain: {fileID: 0}
-  PlayAgainPerfect: {fileID: 0}
 --- !u!4 &1532592808
 Transform:
   m_ObjectHideFlags: 0
@@ -2205,7 +2067,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1739280034
 GameObject:
