@@ -29,4 +29,6 @@ public static class WorldVariables
     public static string bird = "";
     public static string shark = "";
     public static string fish = "";
+
+    public static Scenario.Animals animals = new Scenario.Animals();
 }

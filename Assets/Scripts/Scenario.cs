@@ -64,8 +64,8 @@ public class Scenario : ScriptableObject
 
     [SerializeField]
     [Tooltip("List of possible choices for this scenario. If none leave empty")]
-    Choice[] choices;
-    public Choice[] Choices
+    List<Choice> choices;
+    public List<Choice> Choices
     {
         get => choices;
         set => choices = value;
@@ -139,4 +139,9 @@ public class Choice
     }
 
     public bool Selected { get; set; } = false;
+
+    public void OnEnable()
+    {
+        Selected = false;
+    }
 }

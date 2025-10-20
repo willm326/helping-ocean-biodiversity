@@ -96,46 +96,47 @@ public class Convert : MonoBehaviour
                 newScenario.HurtAnimals |= Scenario.Animals.Fish;
             }
 
-            newScenario.Choices = new Choice[dialogue.Options];
+            newScenario.Choices = new List<Choice>();
             for (int choice = 0; choice < dialogue.Options; choice++)
             {
-                newScenario.Choices[choice] = new Choice();
+                Choice newChoice = new Choice();
                 if (choice == 0)
                 {
-                    newScenario.Choices[choice].MoralValue = dialogue.moralsA;
-                    newScenario.Choices[choice].ResponseSentences = dialogue.sentencesA;
-                    newScenario.Choices[choice].ButtonText = dialogue.OptionAButton;
+                    newChoice.MoralValue = dialogue.moralsA;
+                    newChoice.ResponseSentences = dialogue.sentencesA;
+                    newChoice.ButtonText = dialogue.OptionAButton;
                 }
                 else if(choice == 1)
                 {
-                    newScenario.Choices[choice].MoralValue = dialogue.moralsB;
-                    newScenario.Choices[choice].ResponseSentences = dialogue.sentencesB;
-                    newScenario.Choices[choice].ButtonText = dialogue.OptionBButton;
+                    newChoice.MoralValue = dialogue.moralsB;
+                    newChoice.ResponseSentences = dialogue.sentencesB;
+                    newChoice.ButtonText = dialogue.OptionBButton;
                 }
                 else if (choice == 2)
                 {
-                    newScenario.Choices[choice].MoralValue = dialogue.moralsC;
-                    newScenario.Choices[choice].ResponseSentences = dialogue.sentencesC;
-                    newScenario.Choices[choice].ButtonText = dialogue.OptionCButton;
+                    newChoice.MoralValue = dialogue.moralsC;
+                    newChoice.ResponseSentences = dialogue.sentencesC;
+                    newChoice.ButtonText = dialogue.OptionCButton;
                 }
                 else if (choice == 3)
                 {
-                    newScenario.Choices[choice].MoralValue = dialogue.moralsD;
-                    newScenario.Choices[choice].ResponseSentences = dialogue.sentencesD;
-                    newScenario.Choices[choice].ButtonText = dialogue.OptionDButton;
+                    newChoice.MoralValue = dialogue.moralsD;
+                    newChoice.ResponseSentences = dialogue.sentencesD;
+                    newChoice.ButtonText = dialogue.OptionDButton;
                 }
                 else if (choice == 4)
                 {
-                    newScenario.Choices[choice].MoralValue = dialogue.moralsE;
-                    newScenario.Choices[choice].ResponseSentences = dialogue.sentencesE;
-                    newScenario.Choices[choice].ButtonText = dialogue.OptionEButton;
+                    newChoice.MoralValue = dialogue.moralsE;
+                    newChoice.ResponseSentences = dialogue.sentencesE;
+                    newChoice.ButtonText = dialogue.OptionEButton;
                 }
                 else if (choice == 5)
                 {
-                    newScenario.Choices[choice].MoralValue = dialogue.moralsF;
-                    newScenario.Choices[choice].ResponseSentences = dialogue.sentencesF;
-                    newScenario.Choices[choice].ButtonText = dialogue.OptionFButton;
+                    newChoice.MoralValue = dialogue.moralsF;
+                    newChoice.ResponseSentences = dialogue.sentencesF;
+                    newChoice.ButtonText = dialogue.OptionFButton;
                 }
+                newScenario.Choices.Add(newChoice);
             }
 
             AssetDatabase.CreateAsset(newScenario, path);
