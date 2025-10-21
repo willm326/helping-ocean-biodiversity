@@ -27,7 +27,7 @@ MonoBehaviour:
     responseSentences: []
     requiredConditions: []
     newConditions:
-    - visited secluded area
+    - visited secluded area first
   - buttonText: Go to where there are people gathered around
     moralValue: 0
     nextScenarios:
@@ -35,7 +35,7 @@ MonoBehaviour:
     responseSentences: []
     requiredConditions: []
     newConditions:
-    - visited crowded area
+    - visited crowded area first
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}

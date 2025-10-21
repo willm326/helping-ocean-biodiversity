@@ -24,11 +24,16 @@ MonoBehaviour:
     nextScenarios:
     - {fileID: 11400000, guid: b8d1b26b2c3f6b14ca53bb41d7550e02, type: 2}
     responseSentences: []
+    requiredConditions:
+    - visited crowded area first
+    newConditions: []
   - buttonText: Go to your car to go get lunch
     moralValue: 0
     nextScenarios:
     - {fileID: 11400000, guid: e8f3c2c7b30ac33468f7404f4ee87c86, type: 2}
     responseSentences: []
+    requiredConditions: []
+    newConditions: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
