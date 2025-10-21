@@ -22,15 +22,18 @@ MonoBehaviour:
   choices:
   - buttonText: You go back to put on gear
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 372cb77c30ed98c448addab23eb57c6a, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 372cb77c30ed98c448addab23eb57c6a, type: 2}
     responseSentences:
     - 'You put on the swim gear and go to the docks. '
     - As you get onto the boat a couple of other people join you and you begin heading
       towards a scuba diving spot.
   - buttonText: You try to force your way through
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 573a7707065fc304fa7fa3f5decb284b, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 573a7707065fc304fa7fa3f5decb284b, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

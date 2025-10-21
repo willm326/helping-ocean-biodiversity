@@ -23,20 +23,25 @@ MonoBehaviour:
   choices:
   - buttonText: Try to free the creature
     moralValue: 1
-    nextScenario: {fileID: 11400000, guid: 3c7898caed2b60a4db0dead5f0df716e, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 3c7898caed2b60a4db0dead5f0df716e, type: 2}
     responseSentences: []
   - buttonText: Use your phone to call for help
     moralValue: 2
-    nextScenario: {fileID: 11400000, guid: fa10cd41e61f1dd4899837161950d108, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: fa10cd41e61f1dd4899837161950d108, type: 2}
     responseSentences: []
   - buttonText: Pretend you didn't see anything and continue walking
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 522aa0cf551994c4e9af4eba1e48e491, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 522aa0cf551994c4e9af4eba1e48e491, type: 2}
     responseSentences: []
   - buttonText: Take pictures of the creature
     moralValue: -2
-    nextScenario: {fileID: 11400000, guid: e2acf9be53ee3844baf71194da526eda, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: e2acf9be53ee3844baf71194da526eda, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

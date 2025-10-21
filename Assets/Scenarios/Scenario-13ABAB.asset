@@ -21,12 +21,15 @@ MonoBehaviour:
   choices:
   - buttonText: Ask them what they are doing
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: e87d57974cb92d64d896a489d15adb75, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: e87d57974cb92d64d896a489d15adb75, type: 2}
     responseSentences: []
   - buttonText: Follow behind quietly
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenarios:
+    - {fileID: 0}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

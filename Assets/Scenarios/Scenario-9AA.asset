@@ -22,16 +22,19 @@ MonoBehaviour:
   choices:
   - buttonText: Try to help them
     moralValue: 1
-    nextScenario: {fileID: 11400000, guid: 0f3ca8e3fd029774d946afe58a25e4cb, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 0f3ca8e3fd029774d946afe58a25e4cb, type: 2}
     responseSentences:
     - 'You help them by grabbing their arm and pulling them to the coral reef. '
     - Once you make it to the reef you look back into the water, not seeing the shark.
   - buttonText: Urgently cheer them on
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 0f3ca8e3fd029774d946afe58a25e4cb, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 0f3ca8e3fd029774d946afe58a25e4cb, type: 2}
     responseSentences:
     - The person makes it to the the reef successfully, the shark disappearing from
       view.
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

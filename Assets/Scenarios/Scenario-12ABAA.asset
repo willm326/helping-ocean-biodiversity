@@ -22,12 +22,15 @@ MonoBehaviour:
   choices:
   - buttonText: Ask the captain to go closer
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 2b00db17d63df4a40906e0d5d0ade37d, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 2b00db17d63df4a40906e0d5d0ade37d, type: 2}
     responseSentences: []
   - buttonText: Go back to your spot to sit out the rest of the ride
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 0bcd182f7245bde46995e8716171451a, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 0bcd182f7245bde46995e8716171451a, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

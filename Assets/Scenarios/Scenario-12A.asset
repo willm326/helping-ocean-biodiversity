@@ -22,12 +22,15 @@ MonoBehaviour:
   choices:
   - buttonText: Take some pictures and post them on social media
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: d85ddc8d5d6f867429969800884db9ef, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: d85ddc8d5d6f867429969800884db9ef, type: 2}
     responseSentences: []
   - buttonText: Go look for some animals
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: d5a92b6814f127243831a0c9c3646f7e, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: d5a92b6814f127243831a0c9c3646f7e, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

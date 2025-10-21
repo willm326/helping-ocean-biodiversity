@@ -22,16 +22,19 @@ MonoBehaviour:
   choices:
   - buttonText: Ignore the parent
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}
     responseSentences:
     - You ignore the parent as you leave.
     - The parent curses at you and then leaves with their child.
   - buttonText: Retort back
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}
     responseSentences:
     - 'You retort back to the parent, telling them off. '
     - The parents scoffs, leaving angrily.
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

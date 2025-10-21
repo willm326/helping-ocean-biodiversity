@@ -24,14 +24,17 @@ MonoBehaviour:
   choices:
   - buttonText: Start swimming towards the reef
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 40c27940ef81a6b47931963e92906027, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 40c27940ef81a6b47931963e92906027, type: 2}
     responseSentences: []
   - buttonText: Try to help the person swimming away
     moralValue: 1
-    nextScenario: {fileID: 11400000, guid: 0f3ca8e3fd029774d946afe58a25e4cb, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 0f3ca8e3fd029774d946afe58a25e4cb, type: 2}
     responseSentences:
     - 'You try to help them, grabbing their arm and pulling them to the coral reef. '
     - Once you made it to the reef you look back into the water, not seeing the shark.
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 11400000, guid: eb5275730af8336479b4e3af42bb5c52, type: 2}
+  timeLimit: 0

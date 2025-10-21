@@ -21,16 +21,20 @@ MonoBehaviour:
   choices:
   - buttonText: Try to help it
     moralValue: 1
-    nextScenario: {fileID: 11400000, guid: a2154e4e08e1b074a975aeedcfa25ee5, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: a2154e4e08e1b074a975aeedcfa25ee5, type: 2}
     responseSentences: []
   - buttonText: Call for help using your phone
     moralValue: 2
-    nextScenario: {fileID: 11400000, guid: d3b9453e545dbc44c93c45c7beb68fa0, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: d3b9453e545dbc44c93c45c7beb68fa0, type: 2}
     responseSentences: []
   - buttonText: Get back into the car and drive off
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: a9ce19378d817524cb81f693f599748c, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: a9ce19378d817524cb81f693f599748c, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

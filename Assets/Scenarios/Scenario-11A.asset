@@ -20,16 +20,20 @@ MonoBehaviour:
   choices:
   - buttonText: Feed it some food
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 2394a2bded2889c408acad4322a2bd1d, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 2394a2bded2889c408acad4322a2bd1d, type: 2}
     responseSentences: []
   - buttonText: Scare it off
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 2ca239d0419faa642ad8d1f78c7ea674, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 2ca239d0419faa642ad8d1f78c7ea674, type: 2}
     responseSentences: []
   - buttonText: Ignore it
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 16c4c6eb1d2422a4d82a515054d467db, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 16c4c6eb1d2422a4d82a515054d467db, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

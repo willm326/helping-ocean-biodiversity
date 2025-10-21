@@ -21,12 +21,15 @@ MonoBehaviour:
   choices:
   - buttonText: Continue walking to the secluded part of the pools
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 73a7e4727120bb346bf37106187b5521, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 73a7e4727120bb346bf37106187b5521, type: 2}
     responseSentences: []
   - buttonText: Go to find the nearest pool to check it out
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 53977f4dd9c757a49b2bc2696d434786, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 53977f4dd9c757a49b2bc2696d434786, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

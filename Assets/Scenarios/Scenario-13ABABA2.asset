@@ -22,12 +22,15 @@ MonoBehaviour:
   choices:
   - buttonText: Ask what kind of chemical it was
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 27c0e66afb14cfd498401e1e9daa48c6, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 27c0e66afb14cfd498401e1e9daa48c6, type: 2}
     responseSentences: []
   - buttonText: Stay quiet and continue walking
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: b5a2d24035374804497f3efc386eec06, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: b5a2d24035374804497f3efc386eec06, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

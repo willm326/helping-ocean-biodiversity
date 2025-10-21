@@ -23,15 +23,18 @@ MonoBehaviour:
   choices:
   - buttonText: Go to the coral reef
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 4d2ef20bc7a02c64db503d0df3808edc, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 4d2ef20bc7a02c64db503d0df3808edc, type: 2}
     responseSentences:
     - 'You put on the swim gear prior to going to the docks. '
     - As you get onto the boat a couple of other people join you and you begin heading
       towards a scuba diving spot.
   - buttonText: Swim out to the open water
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: dc8cc0c234d7574448264d306114daed, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: dc8cc0c234d7574448264d306114daed, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

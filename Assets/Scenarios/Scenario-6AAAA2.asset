@@ -21,17 +21,28 @@ MonoBehaviour:
   choices:
   - buttonText: Go to your car to get first aid
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: ffcd9e9263b93394aa244c4f690ed080, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: ffcd9e9263b93394aa244c4f690ed080, type: 2}
     responseSentences: []
+    requiredConditions:
+    - first aid
+    newConditions: []
   - buttonText: Change your mind and call for help
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: d3b9453e545dbc44c93c45c7beb68fa0, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: d3b9453e545dbc44c93c45c7beb68fa0, type: 2}
     responseSentences: []
+    requiredConditions: []
+    newConditions: []
   - buttonText: Get back in the car and continue driving
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: a9ce19378d817524cb81f693f599748c, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: a9ce19378d817524cb81f693f599748c, type: 2}
     responseSentences:
     - You decide to leave the Turtle on the road, hopefully it will be okay :)
+    requiredConditions: []
+    newConditions: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

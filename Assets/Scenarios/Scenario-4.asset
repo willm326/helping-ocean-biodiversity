@@ -25,16 +25,20 @@ MonoBehaviour:
   choices:
   - buttonText: Reuse the container as a flower pot
     moralValue: 2
-    nextScenario: {fileID: 11400000, guid: cf907a415a3417349840b019e567a59c, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: cf907a415a3417349840b019e567a59c, type: 2}
     responseSentences: []
   - buttonText: Recycle it
     moralValue: 1
-    nextScenario: {fileID: 11400000, guid: e057a65cae011cc4089f092beddf3d21, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: e057a65cae011cc4089f092beddf3d21, type: 2}
     responseSentences: []
   - buttonText: Throw it away
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 95ccef65326ce1c4687dbcab8c4ea82d, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 95ccef65326ce1c4687dbcab8c4ea82d, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

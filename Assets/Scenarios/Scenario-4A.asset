@@ -23,12 +23,15 @@ MonoBehaviour:
   choices:
   - buttonText: Pick up the candy wrappers
     moralValue: 1
-    nextScenario: {fileID: 11400000, guid: 41a45227874c5524ab351faf89f1702c, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 41a45227874c5524ab351faf89f1702c, type: 2}
     responseSentences: []
   - buttonText: Ignore them
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 77a8727f2fc937a44aafced448e88243, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 77a8727f2fc937a44aafced448e88243, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

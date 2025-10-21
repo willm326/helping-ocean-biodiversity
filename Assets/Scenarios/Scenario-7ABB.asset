@@ -23,14 +23,16 @@ MonoBehaviour:
   choices:
   - buttonText: Listen to the guard and go put on the gear
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 372cb77c30ed98c448addab23eb57c6a, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 372cb77c30ed98c448addab23eb57c6a, type: 2}
     responseSentences:
     - 'You put on the swim gear and go to the docks. '
     - As you get onto the boat a couple of other people join you and you begin heading
       towards a scuba diving spot.
   - buttonText: Continue to try to force your way through
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: eb5275730af8336479b4e3af42bb5c52, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: eb5275730af8336479b4e3af42bb5c52, type: 2}
     responseSentences:
     - You continue to try to force your way through, but the guard stops you, forcibly
       escorting you out of the event.
@@ -38,3 +40,4 @@ MonoBehaviour:
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

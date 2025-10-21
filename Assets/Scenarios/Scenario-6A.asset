@@ -22,21 +22,25 @@ MonoBehaviour:
   choices:
   - buttonText: Reply with "Yes sounds fun."
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 55c3619c4cb8e6742bed211bebc98154, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 55c3619c4cb8e6742bed211bebc98154, type: 2}
     responseSentences:
     - You respond to your friend. While you are focused on your phone, you feel that
       you hit something.
   - buttonText: Reply with "No I'm busy then."
     moralValue: -2
-    nextScenario: {fileID: 11400000, guid: 55c3619c4cb8e6742bed211bebc98154, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 55c3619c4cb8e6742bed211bebc98154, type: 2}
     responseSentences:
     - You respond to your friend. While you are focused on your phone, you feel that
       you hit something.
   - buttonText: Don't reply
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: bc7f50aa4c2327944a690d7b3a2f1355, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: bc7f50aa4c2327944a690d7b3a2f1355, type: 2}
     responseSentences:
     - You continue driving.
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

@@ -23,16 +23,20 @@ MonoBehaviour:
   choices:
   - buttonText: Pick up an egg to look at it
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: ebebba5180183cf41bd6790b494de771, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: ebebba5180183cf41bd6790b494de771, type: 2}
     responseSentences: []
   - buttonText: Pick up an egg to take home
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: aa80c21be5f91c44d98717d4b83fa2c8, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: aa80c21be5f91c44d98717d4b83fa2c8, type: 2}
     responseSentences: []
   - buttonText: Leave the eggs there
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: a325b85ff7d0747459cc4054f6e9ff79, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: a325b85ff7d0747459cc4054f6e9ff79, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

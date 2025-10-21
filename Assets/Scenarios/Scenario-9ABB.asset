@@ -23,12 +23,15 @@ MonoBehaviour:
   choices:
   - buttonText: Go explore the reef for the remainder of the time
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}
     responseSentences: []
   - buttonText: Decide that you're ready to go back to the shore
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 4841a42b694365b42bf19eb013951254, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 4841a42b694365b42bf19eb013951254, type: 2}
     responseSentences: []
   savedAnimals: 32
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

@@ -21,16 +21,20 @@ MonoBehaviour:
   choices:
   - buttonText: Recycle your trash
     moralValue: 1
-    nextScenario: {fileID: 11400000, guid: 4463f5954fe6ad84a8ba4840517508d0, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 4463f5954fe6ad84a8ba4840517508d0, type: 2}
     responseSentences: []
   - buttonText: Throw away your trash
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: f6601f5d9ffcacb438fb0dbf7f36a4c2, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: f6601f5d9ffcacb438fb0dbf7f36a4c2, type: 2}
     responseSentences: []
   - buttonText: Leave it on the table
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 5d4bdfe342eea4947819cf092de760ab, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 5d4bdfe342eea4947819cf092de760ab, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

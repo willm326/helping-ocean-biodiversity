@@ -25,12 +25,15 @@ MonoBehaviour:
   choices:
   - buttonText: Approach them
     moralValue: 1
-    nextScenario: {fileID: 11400000, guid: 242437b6c7c5ae84c9480fd4bbbeae92, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 242437b6c7c5ae84c9480fd4bbbeae92, type: 2}
     responseSentences: []
   - buttonText: Ignore it
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

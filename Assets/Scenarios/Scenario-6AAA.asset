@@ -22,12 +22,15 @@ MonoBehaviour:
   choices:
   - buttonText: Go investigate
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: c01e09deeb6d6ea4484417faa5c2b0e5, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: c01e09deeb6d6ea4484417faa5c2b0e5, type: 2}
     responseSentences: []
   - buttonText: Get back in the car and continue driving
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: a9ce19378d817524cb81f693f599748c, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: a9ce19378d817524cb81f693f599748c, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

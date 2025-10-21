@@ -21,21 +21,24 @@ MonoBehaviour:
   choices:
   - buttonText: Order a hamburger meal
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: da39fa16b4306ec4182326294eb75131, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: da39fa16b4306ec4182326294eb75131, type: 2}
     responseSentences:
     - You decide to order a hamburger.
     - It comes fresh off the grill, along with a soda and some fries.
     - As you enjoy your meal, a bird approaches you.
   - buttonText: Get a pizza combo
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: da39fa16b4306ec4182326294eb75131, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: da39fa16b4306ec4182326294eb75131, type: 2}
     responseSentences:
     - 'You decide to order a pizza. '
     - 'It comes fresh out of the oven, along with a soda and some fries. '
     - As you enjoy your meal, a bird approaches you.
   - buttonText: Ask for a salad
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: da39fa16b4306ec4182326294eb75131, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: da39fa16b4306ec4182326294eb75131, type: 2}
     responseSentences:
     - 'You decide to order a salad. It comes freshly made, along with coconut and
       some edamame. '
@@ -43,3 +46,4 @@ MonoBehaviour:
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

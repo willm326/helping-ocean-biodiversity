@@ -23,12 +23,15 @@ MonoBehaviour:
   choices:
   - buttonText: Go to the scuba diving event
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: dbc82f38a362470459e12d4ec42fa37a, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: dbc82f38a362470459e12d4ec42fa37a, type: 2}
     responseSentences: []
   - buttonText: Go explore the beach
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: eb5275730af8336479b4e3af42bb5c52, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: eb5275730af8336479b4e3af42bb5c52, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 2
   defaultScenario: {fileID: 0}
+  timeLimit: 0

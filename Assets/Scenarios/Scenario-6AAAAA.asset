@@ -21,12 +21,15 @@ MonoBehaviour:
   choices:
   - buttonText: Use the gauze first to stop the bleeding
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 993689e069d3da04d900d9b8894b0db8, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 993689e069d3da04d900d9b8894b0db8, type: 2}
     responseSentences: []
   - buttonText: Use some alcohol to clean the wound
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: d2254b6871e07454eb154b3d1f2cb74c, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: d2254b6871e07454eb154b3d1f2cb74c, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

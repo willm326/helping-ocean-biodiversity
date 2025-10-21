@@ -20,8 +20,10 @@ MonoBehaviour:
   choices:
   - buttonText: Play Again
     moralValue: 0
-    nextScenario: {fileID: 0}
+    nextScenarios:
+    - {fileID: 0}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

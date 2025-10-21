@@ -20,12 +20,15 @@ MonoBehaviour:
   choices:
   - buttonText: Pull over and check what it is
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 21da3ddbdf6cfbb409262239f86881bd, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 21da3ddbdf6cfbb409262239f86881bd, type: 2}
     responseSentences: []
   - buttonText: Continue driving
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: a9ce19378d817524cb81f693f599748c, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: a9ce19378d817524cb81f693f599748c, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 2
   defaultScenario: {fileID: 0}
+  timeLimit: 0

@@ -22,13 +22,16 @@ MonoBehaviour:
   choices:
   - buttonText: Try to catch it
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 9c03bf24918a7e841b9bb75048800691, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 9c03bf24918a7e841b9bb75048800691, type: 2}
     responseSentences: []
   - buttonText: Leave it alone since it's trying to get away
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: e8f3c2c7b30ac33468f7404f4ee87c86, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: e8f3c2c7b30ac33468f7404f4ee87c86, type: 2}
     responseSentences:
     - You leave the fish alone and decide to go get lunch.
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

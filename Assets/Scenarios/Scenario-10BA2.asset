@@ -21,12 +21,15 @@ MonoBehaviour:
   choices:
   - buttonText: Continue to take pictures
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: b96b694c3ec13bd49af67fabf02d8641, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: b96b694c3ec13bd49af67fabf02d8641, type: 2}
     responseSentences: []
   - buttonText: Put away your phone
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 303e8dab0b2f84e4996bb7d7f28a76e2, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 303e8dab0b2f84e4996bb7d7f28a76e2, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

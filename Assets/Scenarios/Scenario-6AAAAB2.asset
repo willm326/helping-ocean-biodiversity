@@ -21,22 +21,26 @@ MonoBehaviour:
   choices:
   - buttonText: I found the turtle bleeding out on the road
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 045025a0300781048aede0246d341cf2, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 045025a0300781048aede0246d341cf2, type: 2}
     responseSentences:
     - 'You decide to not tell the complete truth and leave it at that. '
     - The person, not able to get any answers from you begins to help the sea turtle
       into their truck.
   - buttonText: I accidentally hit the sea turtle
     moralValue: 1
-    nextScenario: {fileID: 11400000, guid: c97ab42fc8f3b7a4aa3c7df8cc1f4d53, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: c97ab42fc8f3b7a4aa3c7df8cc1f4d53, type: 2}
     responseSentences:
     - You decide to tell the person the truth. They nod in response.
   - buttonText: I don't know
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: da496c85e38ff7e468f2e5b5c5299bec, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: da496c85e38ff7e468f2e5b5c5299bec, type: 2}
     responseSentences:
     - "You avoid telling the person the complete truth. They nod and go to check
       out the area. \r"
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

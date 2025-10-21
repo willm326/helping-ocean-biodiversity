@@ -23,14 +23,17 @@ MonoBehaviour:
   choices:
   - buttonText: Release it back into the water with triumph
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 349c6ddb3a91ead4e9c75606e66429f0, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 50fe0465ac3ff9f458d55fdfd3e44e69, type: 2}
     responseSentences:
     - You decide to release the starfish back into the waters.
   - buttonText: Try to take it home
     moralValue: -1
-    nextScenario: {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
     responseSentences:
     - You decide to take the starfish home.
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

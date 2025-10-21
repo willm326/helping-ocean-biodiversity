@@ -24,7 +24,7 @@ public class ButtonFunctions : MonoBehaviour
         GameObject[] Buttons = GameObject.FindGameObjectsWithTag("Button");
         foreach (GameObject Button in Buttons)
         {
-            Destroy(Button.gameObject);
+            //Destroy(Button.gameObject);
         }
     }
 

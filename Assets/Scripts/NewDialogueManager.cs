@@ -12,6 +12,11 @@ public enum DialogueState
 
 public class NewDialogueManager : MonoBehaviour
 {
+    //Stores string values that can be checked by scenarios if desired (like an inventory of available items)
+    List<string> conditions = new List<string>();
+
+    public List<string> Conditions { get; }
+
     public AudioSource Type;
     private Queue<string> sentences;
     public Image Environment;
@@ -25,6 +30,7 @@ public class NewDialogueManager : MonoBehaviour
 
     DialogueState currentState = DialogueState.ReadingScenario;
     Scenario currentScenario;
+    List<Button> buttons = new List<Button>();
 
     [SerializeField]
     Timer choiceTimer;
@@ -58,7 +64,7 @@ public class NewDialogueManager : MonoBehaviour
         {
             createButtons();
         }
-        else //state should be ReadingResponse
+        else //state should be DialogueState.ReadingResponse
         {
             readScenario(NextScenario);
         }
@@ -66,6 +72,7 @@ public class NewDialogueManager : MonoBehaviour
 
     void readScenario(Scenario scenario)
     {
+        destroyButtons();
         currentState = DialogueState.ReadingScenario;
 
         if (scenario != null)
@@ -95,9 +102,14 @@ public class NewDialogueManager : MonoBehaviour
 
     void readChoice(Choice choice)
     {
+        destroyButtons();
         currentState = DialogueState.ReadingResponse;
 
         WorldVariables.morals += choice.MoralValue;
+        foreach (string condition in choice.NewConditions)
+        {
+            conditions.Add(condition);
+        }
 
         NextScenario = choice.NextScenario;
 
@@ -128,7 +140,16 @@ public class NewDialogueManager : MonoBehaviour
                 if (!currentScenario.Choices[i].Selected)
                 {
                     Button newButton = Instantiate(ChoiceButton, ButtonLayer.transform);
+                    buttons.Add(newButton);
                     newButton.GetComponentInChildren<Text>().text = currentScenario.Choices[i].ButtonText;
+
+                    foreach (string condition in currentScenario.Choices[i].RequiredConditions)
+                    {
+                        if (!conditions.Contains(condition))
+                        {
+                            newButton.enabled = false;
+                        }
+                    }
 
                     int index = i; //Used to specify index of Choices array. If i is used all of the functions will use the final value of i
                     newButton.onClick.AddListener(() =>
@@ -148,6 +169,15 @@ public class NewDialogueManager : MonoBehaviour
                 choiceTimer.SetTimer(currentScenario.TimeLimit, delegate { readScenario(currentScenario.DefaultScenario); });
             }
         }
+    }
+
+    void destroyButtons()
+    {
+        foreach (Button button in buttons)
+        {
+            Destroy(button.gameObject);
+        }
+        buttons.Clear();
     }
 
     IEnumerator TypeSentence(string sentence)

@@ -22,12 +22,15 @@ MonoBehaviour:
   choices:
   - buttonText: Read the message
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 97797d3fc37ea604ba57799e1a415b24, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 97797d3fc37ea604ba57799e1a415b24, type: 2}
     responseSentences: []
   - buttonText: Ignore the message
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: 55cc4329e1c5ccc469a1c33d8d506f27, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: 55cc4329e1c5ccc469a1c33d8d506f27, type: 2}
     responseSentences: []
   savedAnimals: 0
   hurtAnimals: 0
   defaultScenario: {fileID: 0}
+  timeLimit: 0

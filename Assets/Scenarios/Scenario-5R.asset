@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
-  m_Name: Scenario-5C
+  m_Name: Scenario-5R
   m_EditorClassIdentifier: 
   sentences: []
   speaker: 
@@ -20,38 +20,58 @@ MonoBehaviour:
   choices:
   - buttonText: Put on makeup
     moralValue: -1
-    nextScenario: {fileID: 11400000}
+    nextScenarios:
+    - {fileID: 11400000}
     responseSentences:
     - 'You apply some makeup to your face. '
     - What would you like to do next?
+    requiredConditions: []
+    newConditions: []
   - buttonText: Put on your beach gear
     moralValue: 0
-    nextScenario: {fileID: 11400000}
+    nextScenarios:
+    - {fileID: 11400000}
     responseSentences:
     - You pick out your favorite swim suit and put it on.
     - What would you like to do next?
+    requiredConditions: []
+    newConditions: []
   - buttonText: Pack snacks
     moralValue: 0
-    nextScenario: {fileID: 11400000}
+    nextScenarios:
+    - {fileID: 11400000}
     responseSentences:
-    - 'You pack your favorite snacks: Pretzels, candy bars, apples, and potato chips.'
+    - 'You pack your favorite snacks: pretzels, candy bars, apples, and potato chips.'
     - What would you like to do next?
+    requiredConditions: []
+    newConditions: []
   - buttonText: Put on sunscreen
     moralValue: -1
-    nextScenario: {fileID: 11400000}
+    nextScenarios:
+    - {fileID: 11400000}
     responseSentences:
     - You apply sunscreen to protect yourself from the sun.
     - What would you like to do next?
+    requiredConditions: []
+    newConditions: []
   - buttonText: Bring a first aid kit
     moralValue: 1
-    nextScenario: {fileID: 11400000}
+    nextScenarios:
+    - {fileID: 11400000}
     responseSentences:
     - You pack a first aid kit. You never know when it might come in handy.
     - What would you like to do next?
+    requiredConditions: []
+    newConditions:
+    - first aid
   - buttonText: Leave for the beach
     moralValue: 0
-    nextScenario: {fileID: 11400000, guid: b51b73e9c5df6084c8c5cee61dfd95ae, type: 2}
+    nextScenarios:
+    - {fileID: 11400000, guid: b51b73e9c5df6084c8c5cee61dfd95ae, type: 2}
     responseSentences: []
+    requiredConditions: []
+    newConditions: []
   savedAnimals: 0
   hurtAnimals: 0
-  defaultScenario: {fileID: 11400000, guid: b51b73e9c5df6084c8c5cee61dfd95ae, type: 2}
+  defaultScenario: {fileID: 11400000}
+  timeLimit: 0

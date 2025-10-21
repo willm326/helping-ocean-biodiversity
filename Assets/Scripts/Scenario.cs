@@ -130,11 +130,26 @@ public class Choice
 
     [SerializeField]
     [Tooltip("The next scenario this button leads to")]
-    Scenario nextScenario;
+    Scenario[] nextScenarios = new Scenario[1]; //Is an Array to allow one scenario to lead to multiple outcomes (chosen randomly)
     public Scenario NextScenario
     {
-        get => nextScenario;
-        set => nextScenario = value;
+        get
+        {
+            if (nextScenarios.Length == 0)
+            {
+                return null;
+            }
+            else if (nextScenarios.Length == 1)
+            {
+                return nextScenarios[0];
+            }
+            else
+            {
+                int selection = UnityEngine.Random.Range(0, nextScenarios.Length);
+                return nextScenarios[selection];
+            }
+        }
+        set => nextScenarios[0] = value;
     }
 
     [SerializeField]
@@ -145,6 +160,22 @@ public class Choice
     {
         get => responseSentences;
         set => responseSentences = value;
+    }
+
+    [SerializeField]
+    [Tooltip("Conditions the player must have to select this option")]
+    string[] requiredConditions;
+    public string[] RequiredConditions
+    {
+        get => requiredConditions;
+    }
+
+    [SerializeField]
+    [Tooltip("List of conditions to add to the player, such as giving them an item")]
+    string[] newConditions;
+    public string[] NewConditions
+    {
+        get => newConditions;
     }
 
     public bool Selected { get; set; } = false;

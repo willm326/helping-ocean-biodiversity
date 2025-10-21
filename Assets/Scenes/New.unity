@@ -2070,7 +2070,7 @@ MonoBehaviour:
   ChoiceButton: {fileID: 4971060358503706293, guid: 69a844e8dfd32544d8cb68cafc6818fc,
     type: 3}
   ButtonLayer: {fileID: 1067099013}
-  choiceTimer: {fileID: 0}
+  choiceTimer: {fileID: 1340766790}
 --- !u!4 &1532592808
 Transform:
   m_ObjectHideFlags: 0
