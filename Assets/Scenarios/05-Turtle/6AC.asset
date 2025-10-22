@@ -1,0 +1,34 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: 6AC
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'You decide to not answer the text message from your friend. '
+  - As you are driving, you see a sea turtle on the road.
+  speaker: 
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: 9a00051d993350847bc24ca7d6797c66, type: 3}
+  choices:
+  - buttonText: Swerve out of the way
+    moralValue: 1
+    nextScenarios:
+    - {fileID: 11400000, guid: 55cc4329e1c5ccc469a1c33d8d506f27, type: 2}
+    responseSentences:
+    - You manage to avoid hitting the turtle and continue to the beach.
+    requiredConditions: []
+    newConditions: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 11400000, guid: 9c7be633ea3e6da4d925d5f0c0ce294d, type: 2}
+  timeLimit: 3

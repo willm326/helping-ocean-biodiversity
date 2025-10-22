@@ -71,21 +71,22 @@ public class EndingManager : NewDialogueManager
             bool animalSaved = (savedAnimals & nextAnimal.AssociatedAnimal) == nextAnimal.AssociatedAnimal;
             bool animalHurt = (hurtAnimals & nextAnimal.AssociatedAnimal) == nextAnimal.AssociatedAnimal;
 
+            //Call readScenario again to read the scenario it is not null, else move on to the next animal
             if (animalSaved && animalHurt)
             {
-                base.readScenario(nextAnimal.ComplexScenario);
+                readScenario(nextAnimal.ComplexScenario); 
             }
             else if (animalSaved)
             {
-                base.readScenario(nextAnimal.PositiveScenario);
+                readScenario(nextAnimal.PositiveScenario);
             }
             else if (animalHurt)
             {
-                base.readScenario(nextAnimal.NegativeScenario);
+                readScenario(nextAnimal.NegativeScenario);
             }
             else
             {
-                base.readScenario(nextAnimal.NeutralScenario);
+                readScenario(nextAnimal.NeutralScenario);
             }
         }
         else

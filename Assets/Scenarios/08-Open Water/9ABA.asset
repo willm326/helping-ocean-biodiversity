@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: 9ABA
+  m_EditorClassIdentifier: 
+  sentences:
+  - 'You try to look for the shark further. '
+  - ...
+  - 'You find the shark aimlessly swimming around. '
+  - It seems to be a hammerhead shark.
+  speaker: 
+  character: {fileID: 21300000, guid: 6dd25db94af3dad44b705e26567105fc, type: 3}
+  environment: {fileID: 21300000, guid: 03bc63bd95ef82b47a8bf4bcd63d05d0, type: 3}
+  overlay: {fileID: 21300000, guid: c9a514980229a7d47a983e6a31186fe8, type: 3}
+  choices:
+  - buttonText: Report back to the guide
+    moralValue: 1
+    nextScenarios:
+    - {fileID: 11400000, guid: de28f9f5f18bfbb46a4dad32a9c05927, type: 2}
+    responseSentences:
+    - You decide to find the guide and report the shark attack.
+    requiredConditions: []
+    newConditions: []
+  - buttonText: Go explore the reef for the remainder of the time
+    moralValue: 0
+    nextScenarios:
+    - {fileID: 11400000, guid: 05ed73059a3b2244f956760445abda88, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  savedAnimals: 32
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}
+  timeLimit: 0

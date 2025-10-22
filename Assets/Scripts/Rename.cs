@@ -9,6 +9,7 @@ public class Rename : MonoBehaviour
     void Start()
     {
         rename();
+        AssetDatabase.SaveAssets();
     }
 
    void rename()
@@ -20,8 +21,9 @@ public class Rename : MonoBehaviour
             if (path != null)
             {
                 Scenario scenario = AssetDatabase.LoadAssetAtPath<Scenario>(path);
-                scenario.name = scenario.name.Substring(9);
+                AssetDatabase.RenameAsset(path, scenario.name.Substring(9));
+
             }
         }
-   }
+    }
 }

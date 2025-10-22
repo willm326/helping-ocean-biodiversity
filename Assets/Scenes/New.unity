@@ -1860,6 +1860,7 @@ GameObject:
   - component: {fileID: 1532592808}
   - component: {fileID: 1532592807}
   - component: {fileID: 1532592809}
+  - component: {fileID: 1532592810}
   m_Layer: 0
   m_Name: NewDialogueManager
   m_TagString: Untagged
@@ -1951,6 +1952,18 @@ MonoBehaviour:
   animalGrid: {fileID: 653385275}
   animalImageTemplate: {fileID: 1433139068878824613, guid: d847a1ad87ed08543b2d7c9931a6c587,
     type: 3}
+--- !u!114 &1532592810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1532592806}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6c2a97e9158bc094b8c304c113b3a07e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1782765396
 GameObject:
   m_ObjectHideFlags: 0
