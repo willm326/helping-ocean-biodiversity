@@ -20,8 +20,6 @@ MonoBehaviour:
     been affected. '
   - Remember folks, if any of you ever find an injured or ill creature you'll report
     it to animal control or inform the wildlife services immediately.
-  - Remember folks, if any of you ever find an injured or ill creature you'll report
-    it to animal control or inform the wildlife services immediately.
   speaker: News Reporter
   character: {fileID: 0}
   environment: {fileID: 0}
@@ -29,5 +27,5 @@ MonoBehaviour:
   choices: []
   savedAnimals: 0
   hurtAnimals: 0
-  defaultScenario: {fileID: 0}
+  defaultScenario: {fileID: 11400000, guid: 4960633e7b4fe56459df84b25bfa3ca7, type: 2}
   timeLimit: 0

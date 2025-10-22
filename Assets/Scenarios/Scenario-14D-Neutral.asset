@@ -27,5 +27,5 @@ MonoBehaviour:
   choices: []
   savedAnimals: 0
   hurtAnimals: 0
-  defaultScenario: {fileID: 0}
+  defaultScenario: {fileID: 11400000, guid: 56219a14e4f19c340bd8ed2c36542918, type: 2}
   timeLimit: 0

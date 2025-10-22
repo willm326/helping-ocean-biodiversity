@@ -27,11 +27,15 @@ MonoBehaviour:
     responseSentences:
     - You decide to leave the Turtle on the road.
     - Hopefully it will be okay.
+    requiredConditions: []
+    newConditions: []
   - buttonText: Wrap Gauze around the injury
     moralValue: 0
     nextScenarios:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 993689e069d3da04d900d9b8894b0db8, type: 2}
     responseSentences: []
+    requiredConditions: []
+    newConditions: []
   savedAnimals: 2
   hurtAnimals: 0
   defaultScenario: {fileID: 0}

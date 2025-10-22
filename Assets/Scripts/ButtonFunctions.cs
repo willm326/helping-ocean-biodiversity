@@ -126,6 +126,6 @@ public class ButtonFunctions : MonoBehaviour
 
     public void PlayGame()
     {
-        SceneManager.LoadScene("Main");
+        SceneManager.LoadScene("New");
     }
 }

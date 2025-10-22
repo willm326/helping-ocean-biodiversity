@@ -18,7 +18,7 @@ public class NewDialogueManager : MonoBehaviour
     public List<string> Conditions { get; }
 
     public AudioSource Type;
-    private Queue<string> sentences;
+    private Queue<string> sentences = new Queue<string>();
     public Image Environment;
     public Image Character;
     public Image Cinematic;
@@ -34,10 +34,23 @@ public class NewDialogueManager : MonoBehaviour
 
     [SerializeField]
     Timer choiceTimer;
+    [SerializeField]
+    EndingManager endingManager;
+    [SerializeField]
+    Button nextButton;
 
-    void Start()
+    [SerializeField]
+    protected Scenario.Animals savedAnimals;
+    [SerializeField]
+    protected Scenario.Animals hurtAnimals;
+    [SerializeField]
+    protected int morals = 0;
+    protected bool noBadDecisions = true;
+    protected bool noGoodDecisions = true;
+
+    protected void Start()
     {
-        sentences = new Queue<string>();
+        connectNextButton();
         readScenario(NextScenario);
     }
 
@@ -70,7 +83,7 @@ public class NewDialogueManager : MonoBehaviour
         }
     }
 
-    void readScenario(Scenario scenario)
+    protected virtual void readScenario(Scenario scenario)
     {
         destroyButtons();
         currentState = DialogueState.ReadingScenario;
@@ -79,9 +92,16 @@ public class NewDialogueManager : MonoBehaviour
         {
             currentScenario = scenario;
         }
-        else
+        else if (currentScenario.DefaultScenario != null)
         {
             currentScenario = currentScenario.DefaultScenario;
+        }
+        else
+        {
+            disconnectNextButton();
+            StopAllCoroutines();
+            endingManager.readEnding(morals, savedAnimals, hurtAnimals, noBadDecisions, noGoodDecisions);
+            return;
         }
 
         Environment.sprite = currentScenario.Environment;
@@ -100,12 +120,31 @@ public class NewDialogueManager : MonoBehaviour
         DisplayNextSentence();
     }
 
+    protected void connectNextButton()
+    {
+        nextButton.onClick.AddListener(DisplayNextSentence);
+    }
+
+    protected void disconnectNextButton()
+    {
+        nextButton.onClick.RemoveListener(DisplayNextSentence);
+    }
+
     void readChoice(Choice choice)
     {
         destroyButtons();
         currentState = DialogueState.ReadingResponse;
 
-        WorldVariables.morals += choice.MoralValue;
+        morals += choice.MoralValue;
+        if (choice.MoralValue > 0)
+        {
+            noGoodDecisions = false;
+        }
+        else if (choice.MoralValue < 0)
+        {
+            noBadDecisions = false;
+        }
+
         foreach (string condition in choice.NewConditions)
         {
             conditions.Add(condition);
