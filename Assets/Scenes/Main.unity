@@ -1886,7 +1886,7 @@ MonoBehaviour:
   Cinematic: {fileID: 359038431}
   Name: {fileID: 1859971214}
   dialogueText: {fileID: 1782765398}
-  NextScenario: {fileID: 11400000, guid: 45696a89c120d2944903e25a67e8422c, type: 2}
+  NextScenario: {fileID: 11400000, guid: 47dbbcc4ca9f0db419c939b9a9eb6db3, type: 2}
   ChoiceButton: {fileID: 4971060358503706293, guid: 69a844e8dfd32544d8cb68cafc6818fc,
     type: 3}
   ButtonLayer: {fileID: 1067099013}
@@ -1959,7 +1959,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532592806}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6c2a97e9158bc094b8c304c113b3a07e, type: 3}
   m_Name: 

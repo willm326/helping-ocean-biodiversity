@@ -26,7 +26,6 @@ public class Scenario : ScriptableObject
     public string[] Sentences
     {
         get => sentences;
-        set => sentences = value;
     }
 
     [SerializeField]
@@ -34,7 +33,6 @@ public class Scenario : ScriptableObject
     public string Speaker
     {
         get => speaker;
-        set => speaker = value;
     }
 
     [SerializeField]
@@ -42,7 +40,6 @@ public class Scenario : ScriptableObject
     public Sprite Character
     {
         get => character;
-        set => character = value;
     }
 
     [SerializeField]
@@ -50,7 +47,6 @@ public class Scenario : ScriptableObject
     public Sprite Environment
     {
         get => environment;
-        set => environment = value;
     }
 
     [SerializeField]
@@ -59,7 +55,6 @@ public class Scenario : ScriptableObject
     public Sprite Overlay
     {
         get => overlay;
-        set => overlay = value;
     }
 
     [SerializeField]
@@ -68,7 +63,6 @@ public class Scenario : ScriptableObject
     public List<Choice> Choices
     {
         get => choices;
-        set => choices = value;
     }
 
     [SerializeField]
@@ -77,7 +71,6 @@ public class Scenario : ScriptableObject
     public Animals SavedAnimals
     {
         get => savedAnimals;
-        set => savedAnimals = value;
     }
 
     [SerializeField]
@@ -86,7 +79,6 @@ public class Scenario : ScriptableObject
     public Animals HurtAnimals
     {
         get => hurtAnimals;
-        set => hurtAnimals = value;
     }
 
     [SerializeField]
@@ -95,7 +87,6 @@ public class Scenario : ScriptableObject
     public Scenario DefaultScenario
     {
         get => defaultScenario;
-        set => defaultScenario = value;
     }
 
     [SerializeField]
@@ -104,7 +95,6 @@ public class Scenario : ScriptableObject
     public float TimeLimit
     {
         get => timeLimit;
-        set => timeLimit = value;
     }
 }
 
@@ -116,7 +106,6 @@ public class Choice
     public string ButtonText
     {
         get => buttonText;
-        set => buttonText = value;
     }
 
     [SerializeField]
@@ -125,7 +114,6 @@ public class Choice
     public int MoralValue
     {
         get => moralValue;
-        set => moralValue = value;
     }
 
     [SerializeField]
@@ -159,7 +147,6 @@ public class Choice
     public string[] ResponseSentences
     {
         get => responseSentences;
-        set => responseSentences = value;
     }
 
     [SerializeField]
