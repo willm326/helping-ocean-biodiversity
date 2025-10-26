@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266c7abb7b34b36439f29461576a06cb, type: 3}
+  m_Name: Manatee
+  m_EditorClassIdentifier: 
+  associatedAnimal: 8
+  positiveScenario: {fileID: 11400000, guid: d5150417b4124d441ac5f5a7341a125c, type: 2}
+  negativeScenario: {fileID: 11400000, guid: dae0f86bbe4f7954bad8fa061a525ea0, type: 2}
+  neutralScenario: {fileID: 11400000, guid: e20fe92a1d0a55449a899f5c0b6f8724, type: 2}
+  complexScenario: {fileID: 0}

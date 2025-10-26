@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: 12ABA
+  m_EditorClassIdentifier: 
+  sentences:
+  - As you continue looking for animals, the boat slows down a bit.
+  - In the distance you see a spout of water rise from the surface.
+  speaker: 
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: 512140461f4b74c499e07d22074f159b, type: 3}
+  choices:
+  - buttonText: Take pictures
+    moralValue: 0
+    nextScenarios:
+    - {fileID: 11400000, guid: 0593353fcb3e13a41a997035077feebc, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  - buttonText: Ask the captain to go closer
+    moralValue: 0
+    nextScenarios:
+    - {fileID: 11400000, guid: 2b00db17d63df4a40906e0d5d0ade37d, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}
+  timeLimit: 0

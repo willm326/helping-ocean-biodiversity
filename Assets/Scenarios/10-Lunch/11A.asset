@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: 11A
+  m_EditorClassIdentifier: 
+  sentences: []
+  speaker: 
+  character: {fileID: 21300000, guid: 13fa04b908e81e1459a45b9486bca3f6, type: 3}
+  environment: {fileID: 21300000, guid: 1124ad3b932dc114d9f1979f483fc8f5, type: 3}
+  overlay: {fileID: 21300000, guid: c9a514980229a7d47a983e6a31186fe8, type: 3}
+  choices:
+  - buttonText: Feed it some food
+    moralValue: -1
+    nextScenarios:
+    - {fileID: 11400000, guid: 2394a2bded2889c408acad4322a2bd1d, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  - buttonText: Scare it off
+    moralValue: 0
+    nextScenarios:
+    - {fileID: 11400000, guid: 2ca239d0419faa642ad8d1f78c7ea674, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  - buttonText: Ignore it
+    moralValue: 0
+    nextScenarios:
+    - {fileID: 11400000, guid: 16c4c6eb1d2422a4d82a515054d467db, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}
+  timeLimit: 0

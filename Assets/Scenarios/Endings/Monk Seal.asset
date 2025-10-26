@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 266c7abb7b34b36439f29461576a06cb, type: 3}
+  m_Name: Monk Seal
+  m_EditorClassIdentifier: 
+  associatedAnimal: 4
+  positiveScenario: {fileID: 11400000, guid: abbc6a313636b2c4ea5f2e714786a45f, type: 2}
+  negativeScenario: {fileID: 11400000, guid: 594a538e4bbaa9642ba27660b81011e4, type: 2}
+  neutralScenario: {fileID: 11400000, guid: 2c1ce88b040f71e4992def1191a4c85a, type: 2}
+  complexScenario: {fileID: 0}

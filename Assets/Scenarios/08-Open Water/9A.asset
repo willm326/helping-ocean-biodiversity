@@ -1,0 +1,44 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: 9A
+  m_EditorClassIdentifier: 
+  sentences:
+  - You swim around the surface of the water, and you see another person dive down.
+  - 'You swim around for a little bit. '
+  - You suddenly see the from before person burst out from the water, hearing them
+    shout shark.
+  speaker: 
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: 03bc63bd95ef82b47a8bf4bcd63d05d0, type: 3}
+  choices:
+  - buttonText: Start swimming towards the reef
+    moralValue: -1
+    nextScenarios:
+    - {fileID: 11400000, guid: 40c27940ef81a6b47931963e92906027, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  - buttonText: Try to help the person swimming away
+    moralValue: 1
+    nextScenarios:
+    - {fileID: 11400000, guid: 0f3ca8e3fd029774d946afe58a25e4cb, type: 2}
+    responseSentences:
+    - 'You try to help them, grabbing their arm and pulling them to the coral reef. '
+    - Once you made it to the reef you look back into the water, not seeing the shark.
+    requiredConditions: []
+    newConditions: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 11400000, guid: eb5275730af8336479b4e3af42bb5c52, type: 2}
+  timeLimit: 0

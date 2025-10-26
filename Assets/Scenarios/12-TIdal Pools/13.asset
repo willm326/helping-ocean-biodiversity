@@ -1,0 +1,39 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: 13
+  m_EditorClassIdentifier: 
+  sentences:
+  - When you arrive, the tidal pools aren't too populated.
+  speaker: 
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: ac510f8a4b54a354b8fb84c4bdab22ed, type: 3}
+  choices:
+  - buttonText: Continue walking to the secluded part of the pools
+    moralValue: 0
+    nextScenarios:
+    - {fileID: 11400000, guid: 73a7e4727120bb346bf37106187b5521, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  - buttonText: Go to find the nearest pool to check it out
+    moralValue: 0
+    nextScenarios:
+    - {fileID: 11400000, guid: 53977f4dd9c757a49b2bc2696d434786, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}
+  timeLimit: 0

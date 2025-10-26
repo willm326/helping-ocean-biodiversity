@@ -1,0 +1,48 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2c146f7bbe1b07243aac8e89a2b3d6d4, type: 3}
+  m_Name: 10AB
+  m_EditorClassIdentifier: 
+  sentences:
+  - You approach the eggs.
+  - As you get closer, you can see the eggs more clearly.
+  - You touch the eggs and they feel warm to your hand.
+  speaker: 
+  character: {fileID: 0}
+  environment: {fileID: 0}
+  overlay: {fileID: 21300000, guid: 40b7c97fb86b9844cb5e7313472d9616, type: 3}
+  choices:
+  - buttonText: Pick up an egg to look at it
+    moralValue: 0
+    nextScenarios:
+    - {fileID: 11400000, guid: ebebba5180183cf41bd6790b494de771, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  - buttonText: Pick up an egg to take home
+    moralValue: -1
+    nextScenarios:
+    - {fileID: 11400000, guid: aa80c21be5f91c44d98717d4b83fa2c8, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  - buttonText: Leave the eggs there
+    moralValue: 0
+    nextScenarios:
+    - {fileID: 11400000, guid: a325b85ff7d0747459cc4054f6e9ff79, type: 2}
+    responseSentences: []
+    requiredConditions: []
+    newConditions: []
+  savedAnimals: 0
+  hurtAnimals: 0
+  defaultScenario: {fileID: 0}
+  timeLimit: 0
