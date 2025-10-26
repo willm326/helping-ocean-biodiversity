@@ -10,7 +10,7 @@ public enum DialogueState
     ReadingResponse //The response to the player's choice is being read
 }
 
-public class NewDialogueManager : MonoBehaviour
+public class DialogueManager : MonoBehaviour
 {
     //Stores string values that can be checked by scenarios if desired (like an inventory of available items)
     List<string> conditions = new List<string>();

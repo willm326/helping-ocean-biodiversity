@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EndingManager : NewDialogueManager
+public class EndingManager : DialogueManager
 {
     [SerializeField]
     [Tooltip("Scenes to show the player at the end based on the animals they interacted with")]

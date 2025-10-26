@@ -38,7 +38,7 @@ MonoBehaviour:
   - buttonText: Take the coral away from them and keep it for yourself
     moralValue: -2
     nextScenarios:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: 8b8a708301400e845a9f02612fdbea5b, type: 2}
     responseSentences: []
     requiredConditions: []
     newConditions: []

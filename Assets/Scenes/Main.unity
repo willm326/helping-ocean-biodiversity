@@ -1862,7 +1862,7 @@ GameObject:
   - component: {fileID: 1532592809}
   - component: {fileID: 1532592810}
   m_Layer: 0
-  m_Name: NewDialogueManager
+  m_Name: DialogueManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

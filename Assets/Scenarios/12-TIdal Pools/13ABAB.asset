@@ -29,7 +29,7 @@ MonoBehaviour:
   - buttonText: Follow behind quietly
     moralValue: 0
     nextScenarios:
-    - {fileID: 0}
+    - {fileID: 11400000, guid: b5a2d24035374804497f3efc386eec06, type: 2}
     responseSentences: []
     requiredConditions: []
     newConditions: []
