@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EndingManager : DialogueManager
+public class EndingManager : MonoBehaviour
 {
     [SerializeField]
     [Tooltip("Scenes to show the player at the end based on the animals they interacted with")]
@@ -32,6 +32,15 @@ public class EndingManager : DialogueManager
 
     Dictionary<Scenario.Animals, Sprite> animalImages;
 
+    [SerializeField]
+    protected Scenario.Animals savedAnimals;
+    [SerializeField]
+    protected Scenario.Animals hurtAnimals;
+    [SerializeField]
+    protected int morals = 0;
+    protected bool noBadDecisions = true;
+    protected bool noGoodDecisions = true;
+
     new protected void Start()
     {
         animalImages = new Dictionary<Scenario.Animals, Sprite>()
@@ -53,15 +62,14 @@ public class EndingManager : DialogueManager
         morals = accumulatedMorals;
         this.noBadDecisions = noBadDecisions;
         this.noGoodDecisions = noGoodDecisions;
-        connectNextButton();
         readScenario(null);
     }
 
-    override protected void readScenario(Scenario scenario)
+    void readScenario(Scenario scenario)
     {
         if (scenario != null)
         {
-            base.readScenario(scenario);
+            //base.readScenario(scenario);
         }    
         else if (animalScenarios.Count > 0)
         {

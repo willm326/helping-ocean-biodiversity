@@ -17,27 +17,21 @@ public class DialogueManager : MonoBehaviour
 
     public List<string> Conditions { get; }
 
-    public AudioSource Type;
-    private Queue<string> sentences = new Queue<string>();
-    public Image Environment;
-    public Image Character;
-    public Image Cinematic;
-    public Text Name;
-    public Text dialogueText;
+    private Scenario currentScenario;
     public Scenario NextScenario;
     public Button ChoiceButton;
     public GameObject ButtonLayer;
 
+    [SerializeField]
+    DialogueBox dialogueBox;
+
     DialogueState currentState = DialogueState.ReadingScenario;
-    Scenario currentScenario;
     List<Button> buttons = new List<Button>();
 
     [SerializeField]
     Timer choiceTimer;
     [SerializeField]
     EndingManager endingManager;
-    [SerializeField]
-    Button nextButton;
 
     [SerializeField]
     protected Scenario.Animals savedAnimals;
@@ -50,28 +44,11 @@ public class DialogueManager : MonoBehaviour
 
     protected void Start()
     {
-        connectNextButton();
+        dialogueBox.QueueIsEmpty += dialogueFinished;
         readScenario(NextScenario);
     }
 
-    public void DisplayNextSentence()
-    {
-        if (currentState != DialogueState.MakingChoice)
-        {
-            if (sentences.Count != 0)
-            {
-                string sentence = sentences.Dequeue();
-                StopAllCoroutines();
-                StartCoroutine(TypeSentence(sentence));
-            }
-            else
-            {
-                endDialogue();
-            }
-        }
-    }
-
-    void endDialogue()
+    void dialogueFinished(object sender, System.EventArgs e)
     {
         if (currentState == DialogueState.ReadingScenario)
         {
@@ -83,7 +60,7 @@ public class DialogueManager : MonoBehaviour
         }
     }
 
-    protected virtual void readScenario(Scenario scenario)
+    void readScenario(Scenario scenario)
     {
         destroyButtons();
         currentState = DialogueState.ReadingScenario;
@@ -91,43 +68,17 @@ public class DialogueManager : MonoBehaviour
         if (scenario != null)
         {
             currentScenario = scenario;
+            dialogueBox.ReadScenario(scenario);
         }
         else if (currentScenario.DefaultScenario != null)
         {
             currentScenario = currentScenario.DefaultScenario;
+            dialogueBox.ReadScenario(scenario);
         }
         else
         {
-            disconnectNextButton();
-            StopAllCoroutines();
             endingManager.readEnding(morals, savedAnimals, hurtAnimals, noBadDecisions, noGoodDecisions);
-            return;
         }
-
-        Environment.sprite = currentScenario.Environment;
-        Character.sprite = currentScenario.Character;
-        Cinematic.sprite = currentScenario.Overlay;
-
-        Name.text = currentScenario.Speaker;
-
-        sentences.Clear();
-
-        foreach (string sentence in currentScenario.Sentences)
-        {
-            sentences.Enqueue(sentence);
-        }
-
-        DisplayNextSentence();
-    }
-
-    protected void connectNextButton()
-    {
-        nextButton.onClick.AddListener(DisplayNextSentence);
-    }
-
-    protected void disconnectNextButton()
-    {
-        nextButton.onClick.RemoveListener(DisplayNextSentence);
     }
 
     void readChoice(Choice choice)
@@ -152,16 +103,14 @@ public class DialogueManager : MonoBehaviour
 
         NextScenario = choice.NextScenario;
 
-        sentences.Clear();
-
         foreach (string sentence in choice.ResponseSentences)
         {
-            sentences.Enqueue(sentence);
+            dialogueBox.EnqueueSentence(sentence);
         }
 
         //choice.Selected = true;
 
-        DisplayNextSentence();
+        dialogueBox.DisplayNextSentence();
     }
 
     void createButtons()
@@ -217,23 +166,5 @@ public class DialogueManager : MonoBehaviour
             Destroy(button.gameObject);
         }
         buttons.Clear();
-    }
-
-    IEnumerator TypeSentence(string sentence)
-    {
-        dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
-        {
-            dialogueText.text += letter;
-            if (Type.isPlaying == false && letter.ToString() != " ")
-            {
-                Type.UnPause();
-            }
-            if (letter.ToString() == "." || letter.ToString() == "?" || letter.ToString() == "M" || letter.ToString() == "\"")
-            {
-                Type.Pause();
-            }
-            yield return new WaitForSeconds(0.01f);
-        }
     }
 }
