@@ -1175,13 +1175,10 @@ MonoBehaviour:
   ChoiceButton: {fileID: 4971060358503706293, guid: 69a844e8dfd32544d8cb68cafc6818fc,
     type: 3}
   ButtonLayer: {fileID: 1067099013}
-  startingScenario: {fileID: 11400000, guid: 89351c51bdd0c85418fac741280ae6f3, type: 2}
+  startingScenario: {fileID: 11400000, guid: 47dbbcc4ca9f0db419c939b9a9eb6db3, type: 2}
   dialogueBox: {fileID: 696076705}
   choiceTimer: {fileID: 1340766790}
   endingManager: {fileID: 1532592809}
-  savedAnimals: -1
-  hurtAnimals: 0
-  morals: 0
 --- !u!4 &1532592808
 Transform:
   m_ObjectHideFlags: 0

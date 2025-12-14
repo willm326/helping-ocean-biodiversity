@@ -36,13 +36,14 @@ public class EndingManager : MonoBehaviour
     Dictionary<Scenario.Animals, Sprite> animalImages;
 
     [SerializeField]
-    protected Scenario.Animals savedAnimals;
+    private Scenario.Animals savedAnimals;
     [SerializeField]
-    protected Scenario.Animals hurtAnimals;
+    private Scenario.Animals hurtAnimals;
     [SerializeField]
-    protected int morals = 0;
-    protected bool noBadDecisions = true;
-    protected bool noGoodDecisions = true;
+    private int morals = 0;
+
+    private bool noBadDecisions = true;
+    private bool noGoodDecisions = true;
 
     private void Start()
     {
@@ -56,7 +57,6 @@ public class EndingManager : MonoBehaviour
             { Scenario.Animals.Turtle, Resources.Load<Sprite>("turtle") },
             { Scenario.Animals.Vaquita, Resources.Load<Sprite>("vaquita") },
         };
-        dialogueBox.QueueIsEmpty += onQueueIsEmpty;
     }
 
     private void onQueueIsEmpty(object sender, System.EventArgs e)
@@ -64,14 +64,33 @@ public class EndingManager : MonoBehaviour
         selectScenario();
     }
 
-    public void readEnding(int accumulatedMorals, Scenario.Animals saved, Scenario.Animals hurt, bool noBadDecisions, bool noGoodDecisions)
+    public void beginEnding()
     {
-        savedAnimals = saved;
-        hurtAnimals = hurt;
-        morals = accumulatedMorals;
-        this.noBadDecisions = noBadDecisions;
-        this.noGoodDecisions = noGoodDecisions;
+        dialogueBox.QueueIsEmpty += onQueueIsEmpty;
         selectScenario();
+    }
+
+    public void SaveAnimal(Scenario.Animals animal)
+    {
+        savedAnimals |= animal;
+    }
+
+    public void HurtAnimal(Scenario.Animals animal)
+    {
+        hurtAnimals |= animal;
+    }
+
+    public void AddMorals(int value)
+    {
+        morals += value;
+        if (value > 0)
+        {
+            noGoodDecisions = false;
+        }
+        else if (value < 0)
+        {
+            noBadDecisions = false;
+        }
     }
 
     void selectScenario()

@@ -36,15 +36,6 @@ public class DialogueManager : MonoBehaviour
     [SerializeField]
     EndingManager endingManager;
 
-    [SerializeField]
-    protected Scenario.Animals savedAnimals;
-    [SerializeField]
-    protected Scenario.Animals hurtAnimals;
-    [SerializeField]
-    protected int morals = 0;
-    protected bool noBadDecisions = true;
-    protected bool noGoodDecisions = true;
-
     protected void Start()
     {
         dialogueBox.QueueIsEmpty += dialogueFinished;
@@ -72,16 +63,20 @@ public class DialogueManager : MonoBehaviour
         {
             currentScenario = scenario;
             dialogueBox.ReadScenario(scenario);
+            endingManager.SaveAnimal(scenario.SavedAnimals);
+            endingManager.HurtAnimal(scenario.HurtAnimals);
         }
         else if (currentScenario.DefaultScenario != null)
         {
             currentScenario = currentScenario.DefaultScenario;
             dialogueBox.ReadScenario(scenario);
+            endingManager.SaveAnimal(scenario.SavedAnimals);
+            endingManager.HurtAnimal(scenario.HurtAnimals);
         }
         else
         {
             dialogueBox.QueueIsEmpty -= dialogueFinished;
-            endingManager.readEnding(morals, savedAnimals, hurtAnimals, noBadDecisions, noGoodDecisions);
+            endingManager.beginEnding();
         }
     }
 
@@ -90,15 +85,7 @@ public class DialogueManager : MonoBehaviour
         destroyButtons();
         currentState = DialogueState.ReadingResponse;
 
-        morals += choice.MoralValue;
-        if (choice.MoralValue > 0)
-        {
-            noGoodDecisions = false;
-        }
-        else if (choice.MoralValue < 0)
-        {
-            noBadDecisions = false;
-        }
+        endingManager.AddMorals(choice.MoralValue);
 
         foreach (string condition in choice.NewConditions)
         {
