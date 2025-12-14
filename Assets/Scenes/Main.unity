@@ -1172,10 +1172,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 081c8d9480efe81409967f973d727b6c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  NextScenario: {fileID: 11400000, guid: 47dbbcc4ca9f0db419c939b9a9eb6db3, type: 2}
   ChoiceButton: {fileID: 4971060358503706293, guid: 69a844e8dfd32544d8cb68cafc6818fc,
     type: 3}
   ButtonLayer: {fileID: 1067099013}
+  startingScenario: {fileID: 11400000, guid: 89351c51bdd0c85418fac741280ae6f3, type: 2}
   dialogueBox: {fileID: 696076705}
   choiceTimer: {fileID: 1340766790}
   endingManager: {fileID: 1532592809}
@@ -1203,7 +1203,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1532592806}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 7b5c935e0d12585408a6b3b25830688c, type: 3}
   m_Name: 
@@ -1222,6 +1222,7 @@ MonoBehaviour:
   animalGrid: {fileID: 653385275}
   animalImageTemplate: {fileID: 1433139068878824613, guid: d847a1ad87ed08543b2d7c9931a6c587,
     type: 3}
+  dialogueBox: {fileID: 696076705}
   savedAnimals: 0
   hurtAnimals: 0
   morals: 0

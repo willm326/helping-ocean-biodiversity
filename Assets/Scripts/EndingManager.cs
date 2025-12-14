@@ -30,6 +30,9 @@ public class EndingManager : MonoBehaviour
     [SerializeField]
     Image animalImageTemplate;
 
+    [SerializeField]
+    DialogueBox dialogueBox;
+
     Dictionary<Scenario.Animals, Sprite> animalImages;
 
     [SerializeField]
@@ -41,18 +44,24 @@ public class EndingManager : MonoBehaviour
     protected bool noBadDecisions = true;
     protected bool noGoodDecisions = true;
 
-    new protected void Start()
+    private void Start()
     {
         animalImages = new Dictionary<Scenario.Animals, Sprite>()
+        {
+            { Scenario.Animals.Bird, Resources.Load<Sprite>("bird") },
+            { Scenario.Animals.Fish, Resources.Load<Sprite>("fish") },
+            { Scenario.Animals.Manatee, Resources.Load<Sprite>("manatee") },
+            { Scenario.Animals.MonkSeal, Resources.Load<Sprite>("monk-seal") },
+            { Scenario.Animals.Shark, Resources.Load<Sprite>("shark") },
+            { Scenario.Animals.Turtle, Resources.Load<Sprite>("turtle") },
+            { Scenario.Animals.Vaquita, Resources.Load<Sprite>("vaquita") },
+        };
+        dialogueBox.QueueIsEmpty += onQueueIsEmpty;
+    }
+
+    private void onQueueIsEmpty(object sender, System.EventArgs e)
     {
-        { Scenario.Animals.Bird, Resources.Load<Sprite>("bird") },
-        { Scenario.Animals.Fish, Resources.Load<Sprite>("fish") },
-        { Scenario.Animals.Manatee, Resources.Load<Sprite>("manatee") },
-        { Scenario.Animals.MonkSeal, Resources.Load<Sprite>("monk-seal") },
-        { Scenario.Animals.Shark, Resources.Load<Sprite>("shark") },
-        { Scenario.Animals.Turtle, Resources.Load<Sprite>("turtle") },
-        { Scenario.Animals.Vaquita, Resources.Load<Sprite>("vaquita") },
-    };
+        selectScenario();
     }
 
     public void readEnding(int accumulatedMorals, Scenario.Animals saved, Scenario.Animals hurt, bool noBadDecisions, bool noGoodDecisions)
@@ -62,16 +71,12 @@ public class EndingManager : MonoBehaviour
         morals = accumulatedMorals;
         this.noBadDecisions = noBadDecisions;
         this.noGoodDecisions = noGoodDecisions;
-        readScenario(null);
+        selectScenario();
     }
 
-    void readScenario(Scenario scenario)
+    void selectScenario()
     {
-        if (scenario != null)
-        {
-            //base.readScenario(scenario);
-        }    
-        else if (animalScenarios.Count > 0)
+        if (animalScenarios.Count > 0)
         {
             AnimalScenario nextAnimal = animalScenarios[0];
             animalScenarios.RemoveAt(0);
@@ -100,6 +105,18 @@ public class EndingManager : MonoBehaviour
         else
         {
             displayScore();
+        }
+    }
+    
+    void readScenario(Scenario scenario)
+    {
+        if(scenario == null)
+        {
+            selectScenario();
+        }
+        else
+        {
+            dialogueBox.ReadScenario(scenario);
         }
     }
 

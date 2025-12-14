@@ -18,10 +18,13 @@ public class DialogueManager : MonoBehaviour
     public List<string> Conditions { get; }
 
     private Scenario currentScenario;
-    public Scenario NextScenario;
+    private Scenario nextScenario;
     public Button ChoiceButton;
     public GameObject ButtonLayer;
 
+
+    [SerializeField]
+    Scenario startingScenario;
     [SerializeField]
     DialogueBox dialogueBox;
 
@@ -45,7 +48,7 @@ public class DialogueManager : MonoBehaviour
     protected void Start()
     {
         dialogueBox.QueueIsEmpty += dialogueFinished;
-        readScenario(NextScenario);
+        readScenario(startingScenario);
     }
 
     void dialogueFinished(object sender, System.EventArgs e)
@@ -56,7 +59,7 @@ public class DialogueManager : MonoBehaviour
         }
         else //state should be DialogueState.ReadingResponse
         {
-            readScenario(NextScenario);
+            readScenario(nextScenario);
         }
     }
 
@@ -77,6 +80,7 @@ public class DialogueManager : MonoBehaviour
         }
         else
         {
+            dialogueBox.QueueIsEmpty -= dialogueFinished;
             endingManager.readEnding(morals, savedAnimals, hurtAnimals, noBadDecisions, noGoodDecisions);
         }
     }
@@ -101,7 +105,7 @@ public class DialogueManager : MonoBehaviour
             conditions.Add(condition);
         }
 
-        NextScenario = choice.NextScenario;
+        nextScenario = choice.NextScenario;
 
         foreach (string sentence in choice.ResponseSentences)
         {
