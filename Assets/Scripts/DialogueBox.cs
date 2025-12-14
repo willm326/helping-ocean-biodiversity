@@ -18,6 +18,8 @@ public class DialogueBox : MonoBehaviour
     private Text speakerName;
     [SerializeField]
     private Text dialogueText;
+    [SerializeField]
+    private Button nextButton;
 
     private Queue<string> sentences = new Queue<string>();
 
@@ -35,6 +37,7 @@ public class DialogueBox : MonoBehaviour
         }
         else
         {
+            nextButton.interactable = false;
             QueueIsEmpty?.Invoke(this, EventArgs.Empty);
         }
     }
@@ -63,7 +66,7 @@ public class DialogueBox : MonoBehaviour
 
         foreach (string sentence in scenario.Sentences)
         {
-            sentences.Enqueue(sentence);
+            EnqueueSentence(sentence);
         }
 
         DisplayNextSentence();
@@ -71,6 +74,7 @@ public class DialogueBox : MonoBehaviour
 
     public void EnqueueSentence(string sentence)
     {
+        nextButton.interactable = true;
         sentences.Enqueue(sentence);
     }
 
