@@ -28,23 +28,31 @@ public class DialogueBox : MonoBehaviour
     private AudioSource typingSound;
 
     private Queue<string> sentences = new Queue<string>();
+    private bool coroutineIsRunning = false;
+    private string currentSentence;
 
     public EventHandler QueueIsEmpty; //This action is emitted when there are no sentences left to read in the queue
 
     public void DisplayNextSentence()
     {
-        //TODO: immediately show the full line instead of proceeding to the next one if the coroutine is running
-
-        if (sentences.Count != 0)
+        if (coroutineIsRunning)
         {
-            string sentence = sentences.Dequeue();
             StopAllCoroutines();
-            StartCoroutine(TypeSentence(sentence));
+            coroutineIsRunning = false;
+            dialogueText.text = currentSentence;
         }
         else
         {
-            nextButton.interactable = false;
-            QueueIsEmpty?.Invoke(this, EventArgs.Empty);
+            if (sentences.Count != 0)
+            {
+                string sentence = sentences.Dequeue();
+                StartCoroutine(TypeSentence(sentence));
+            }
+            else
+            {
+                nextButton.interactable = false;
+                QueueIsEmpty?.Invoke(this, EventArgs.Empty);
+            }
         }
     }
 
@@ -93,6 +101,9 @@ public class DialogueBox : MonoBehaviour
 
     private IEnumerator TypeSentence(string sentence)
     {
+        currentSentence = sentence;
+        coroutineIsRunning = true;
+
         Color dialogueColor = dialogueText.color;
         dialogueText.color = dialogueColor;
         dialogueText.text = "<color=#00000000>" + sentence + "</color>";
@@ -113,5 +124,6 @@ public class DialogueBox : MonoBehaviour
         }
 
         dialogueText.text = sentence;
+        coroutineIsRunning = false;
     }
 }
