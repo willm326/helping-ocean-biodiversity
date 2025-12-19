@@ -93,19 +93,25 @@ public class DialogueBox : MonoBehaviour
 
     private IEnumerator TypeSentence(string sentence)
     {
-        dialogueText.text = "";
-        foreach (char letter in sentence.ToCharArray())
+        Color dialogueColor = dialogueText.color;
+        dialogueText.color = dialogueColor;
+        dialogueText.text = "<color=#00000000>" + sentence + "</color>";
+
+        for (int i = 0; i < sentence.Length; i++)
         {
-            dialogueText.text += letter;
-            if (typingSound.isPlaying == false && letter.ToString() != " ")
+            dialogueText.text = sentence.Substring(0, i) + "<color=#00000000>" + sentence.Substring(i) + "</color>";
+
+            if (typingSound.isPlaying == false && sentence[i].ToString() != " ")
             {
                 typingSound.UnPause();
             }
-            if (letter.ToString() == "." || letter.ToString() == "?" || letter.ToString() == "M" || letter.ToString() == "\"")
+            if (sentence[i].ToString() == "." || sentence[i].ToString() == "?" || sentence[i].ToString() == "\"")
             {
                 typingSound.Pause();
             }
             yield return new WaitForSeconds(0.01f);
         }
+
+        dialogueText.text = sentence;
     }
 }

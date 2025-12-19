@@ -635,13 +635,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9903197c178733e44930a42239611651, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  typingSound: {fileID: 4660747764719793001}
   environment: {fileID: 4660747764266827052}
   character: {fileID: 4660747764397183206}
-  cinematic: {fileID: 4660747764308257550}
+  overlay: {fileID: 4660747764308257550}
   speakerName: {fileID: 4660747763329318495}
   dialogueText: {fileID: 4660747763253674375}
   nextButton: {fileID: 4660747764438695690}
+  typingSound: {fileID: 4660747764719793001}
 --- !u!1 &4660747764397183204
 GameObject:
   m_ObjectHideFlags: 0
