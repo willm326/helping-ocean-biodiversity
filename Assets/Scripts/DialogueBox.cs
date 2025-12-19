@@ -37,16 +37,14 @@ public class DialogueBox : MonoBehaviour
     {
         if (coroutineIsRunning)
         {
-            StopAllCoroutines();
-            coroutineIsRunning = false;
-            dialogueText.text = currentSentence;
+            showFullSentence();
         }
         else
         {
             if (sentences.Count != 0)
             {
                 string sentence = sentences.Dequeue();
-                StartCoroutine(TypeSentence(sentence));
+                StartCoroutine(typeSentence(sentence));
             }
             else
             {
@@ -99,7 +97,7 @@ public class DialogueBox : MonoBehaviour
         sentences.Enqueue(sentence);
     }
 
-    private IEnumerator TypeSentence(string sentence)
+    private IEnumerator typeSentence(string sentence)
     {
         currentSentence = sentence;
         coroutineIsRunning = true;
@@ -125,5 +123,13 @@ public class DialogueBox : MonoBehaviour
 
         dialogueText.text = sentence;
         coroutineIsRunning = false;
+    }
+
+    private void showFullSentence()
+    {
+        StopAllCoroutines();
+        coroutineIsRunning = false;
+        dialogueText.text = currentSentence;
+        typingSound.Pause();
     }
 }
