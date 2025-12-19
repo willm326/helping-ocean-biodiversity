@@ -4,22 +4,28 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+/// <summary>
+/// Class <c>DialogueBox</c> reads <c>Scenario</c> data, and displays the text to the player on a screen along with the corresponding graphics.
+/// Uses a Next <c>Button</c> that the player uses to move to the next sentence or <c>Scenario</c>.
+/// </summary>
+
+
 public class DialogueBox : MonoBehaviour
 {
-    [SerializeField]
-    private AudioSource typingSound;
     [SerializeField]
     private Image environment;
     [SerializeField]
     private Image character;
     [SerializeField]
-    private Image cinematic;
+    private Image overlay; //Image that appears on top of both the enviornment and character, used for special full screen images or transparent overlays
     [SerializeField]
     private Text speakerName;
     [SerializeField]
     private Text dialogueText;
     [SerializeField]
     private Button nextButton;
+    [SerializeField]
+    private AudioSource typingSound;
 
     private Queue<string> sentences = new Queue<string>();
 
@@ -42,6 +48,10 @@ public class DialogueBox : MonoBehaviour
         }
     }
 
+    /// <summary>
+    /// Adds all of the sentences of the provided scenario to the queue, and immediately displays the graphics 
+    /// associated with the provided scenario. Will remove any leftover sentences from the queue if there are any remaining.
+    /// </summary>
     public void ReadScenario(Scenario scenario)
     {
         if (scenario == null)
@@ -58,7 +68,7 @@ public class DialogueBox : MonoBehaviour
 
         environment.sprite = scenario.Environment;
         character.sprite = scenario.Character;
-        cinematic.sprite = scenario.Overlay;
+        overlay.sprite = scenario.Overlay;
 
         speakerName.text = scenario.Speaker;
 
@@ -72,13 +82,16 @@ public class DialogueBox : MonoBehaviour
         DisplayNextSentence();
     }
 
+    /// <summary>
+    /// Used to add sentences to the queue without changing scenario graphics or removing any sentences from the queue.
+    /// </summary>
     public void EnqueueSentence(string sentence)
     {
         nextButton.interactable = true;
         sentences.Enqueue(sentence);
     }
 
-    IEnumerator TypeSentence(string sentence)
+    private IEnumerator TypeSentence(string sentence)
     {
         dialogueText.text = "";
         foreach (char letter in sentence.ToCharArray())
