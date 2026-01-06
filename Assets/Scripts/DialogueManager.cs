@@ -44,6 +44,7 @@ public class DialogueManager : MonoBehaviour
 
     void dialogueFinished(object sender, System.EventArgs e)
     {
+        Debug.Log(currentState);
         if (currentState == DialogueState.ReadingScenario)
         {
             createButtons();
@@ -94,14 +95,21 @@ public class DialogueManager : MonoBehaviour
 
         nextScenario = choice.NextScenario;
 
-        foreach (string sentence in choice.ResponseSentences)
+        if (choice.ResponseSentences.Length != 0)
         {
-            dialogueBox.EnqueueSentence(sentence);
+            foreach (string sentence in choice.ResponseSentences)
+            {
+                dialogueBox.EnqueueSentence(sentence);
+            }
+
+            dialogueBox.DisplayNextSentence();
+        }
+        else
+        {
+            readScenario(nextScenario);
         }
 
         //choice.Selected = true;
-
-        dialogueBox.DisplayNextSentence();
     }
 
     void createButtons()
@@ -110,7 +118,8 @@ public class DialogueManager : MonoBehaviour
 
         if (currentScenario.Choices.Count == 0)
         {
-            readScenario(currentScenario.DefaultScenario);
+            nextScenario = currentScenario.DefaultScenario;
+            readScenario(nextScenario);
         }
         else
         {

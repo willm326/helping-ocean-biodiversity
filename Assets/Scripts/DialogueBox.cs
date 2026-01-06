@@ -30,6 +30,7 @@ public class DialogueBox : MonoBehaviour
     private Queue<string> sentences = new Queue<string>();
     private bool coroutineIsRunning = false;
     private string currentSentence;
+    private bool hasChoices;
 
     public EventHandler QueueIsEmpty; //This action is emitted when there are no sentences left to read in the queue
 
@@ -39,18 +40,19 @@ public class DialogueBox : MonoBehaviour
         {
             showFullSentence();
         }
+        else if (sentences.Count != 0)
+        {
+            string sentence = sentences.Dequeue();
+            StartCoroutine(typeSentence(sentence));
+        }
+        else if (!hasChoices)
+        {
+            nextButton.interactable = false;
+            QueueIsEmpty?.Invoke(this, EventArgs.Empty);
+        }
         else
         {
-            if (sentences.Count != 0)
-            {
-                string sentence = sentences.Dequeue();
-                StartCoroutine(typeSentence(sentence));
-            }
-            else
-            {
-                nextButton.interactable = false;
-                QueueIsEmpty?.Invoke(this, EventArgs.Empty);
-            }
+            Debug.LogWarning("No sentence to display");
         }
     }
 
@@ -78,14 +80,29 @@ public class DialogueBox : MonoBehaviour
 
         speakerName.text = scenario.Speaker;
 
-        sentences.Clear();
+        hasChoices = scenario.Choices.Count != 0;
+
+        //If the current scenario has no choices, but the next scenario has no text, its choices should be shown while the current scenario's text is on screen
+        if (!hasChoices && scenario.DefaultScenario?.Sentences.Length == 0)
+        {
+            hasChoices = true;
+        }
 
         foreach (string sentence in scenario.Sentences)
         {
-            EnqueueSentence(sentence);
+            sentences.Enqueue(sentence);
         }
 
-        DisplayNextSentence();
+        if (scenario.Sentences.Length != 0)
+        {
+            DisplayNextSentence();
+            nextButton.interactable = true;
+        }
+        else
+        {
+            nextButton.interactable = false;
+            QueueIsEmpty?.Invoke(this, EventArgs.Empty);
+        }
     }
 
     /// <summary>
@@ -95,6 +112,7 @@ public class DialogueBox : MonoBehaviour
     {
         nextButton.interactable = true;
         sentences.Enqueue(sentence);
+        hasChoices = false;
     }
 
     private IEnumerator typeSentence(string sentence)
@@ -123,6 +141,12 @@ public class DialogueBox : MonoBehaviour
 
         dialogueText.text = sentence;
         coroutineIsRunning = false;
+
+        if (hasChoices && sentences.Count == 0)
+        {
+            nextButton.interactable = false;
+            QueueIsEmpty?.Invoke(this, EventArgs.Empty);
+        }
     }
 
     private void showFullSentence()
@@ -131,5 +155,11 @@ public class DialogueBox : MonoBehaviour
         coroutineIsRunning = false;
         dialogueText.text = currentSentence;
         typingSound.Pause();
+
+        if (hasChoices && sentences.Count == 0)
+        {
+            nextButton.interactable = false;
+            QueueIsEmpty?.Invoke(this, EventArgs.Empty);
+        }
     }
 }
